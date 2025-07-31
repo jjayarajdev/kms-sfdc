@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: kms-sfdc-vector-db
+Version: 0.1.0
+Summary: HPE KMS SFDC Vector Database for Case Similarity Search
+Author: HPE Team
+License: Proprietary
+Requires-Python: >=3.8.1
+Requires-Dist: faiss-cpu==1.7.4
+Requires-Dist: sentence-transformers>=3.0.0
+Requires-Dist: numpy==1.24.3
+Requires-Dist: einops>=0.7.0
+Requires-Dist: pandas==2.0.3
+Requires-Dist: scikit-learn==1.3.0
+Requires-Dist: simple-salesforce==1.12.4
+Requires-Dist: requests==2.31.0
+Requires-Dist: nltk==3.8.1
+Requires-Dist: spacy==3.6.1
+Requires-Dist: textblob==0.17.1
+Requires-Dist: pyyaml==6.0.1
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: loguru==0.7.0
+Requires-Dist: fastapi==0.103.1
+Requires-Dist: uvicorn==0.23.2
+Requires-Dist: pydantic==2.3.0
+Requires-Dist: redis==4.6.0
+Requires-Dist: pymongo==4.5.0
+Requires-Dist: prometheus-client==0.17.1
+Requires-Dist: psutil==5.9.5
+Provides-Extra: dev
+Requires-Dist: pytest==7.4.2; extra == "dev"
+Requires-Dist: pytest-cov==4.1.0; extra == "dev"
+Requires-Dist: pytest-asyncio==0.21.1; extra == "dev"
+Requires-Dist: black==23.7.0; extra == "dev"
+Requires-Dist: flake8==6.0.0; extra == "dev"
+Requires-Dist: mypy==1.5.1; extra == "dev"

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1300" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 22px; font-weight: bold; fill: #2c3e50; }
+      .env-title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #34495e; }
+      .component-title { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #2c3e50; }
+      .text { font-family: Arial, sans-serif; font-size: 12px; fill: #2c3e50; }
+      .small-text { font-family: Arial, sans-serif; font-size: 10px; fill: #7f8c8d; }
+      .spec-text { font-family: Arial, sans-serif; font-size: 11px; fill: #e74c3c; font-weight: bold; }
+      
+      .dev-env { fill: #e8f5e8; stroke: #27ae60; stroke-width: 2; rx: 8; }
+      .staging-env { fill: #fff3e0; stroke: #f39c12; stroke-width: 2; rx: 8; }
+      .prod-env { fill: #fdf2e9; stroke: #e67e22; stroke-width: 2; rx: 8; }
+      .external { fill: #f3e5f5; stroke: #9b59b6; stroke-width: 2; rx: 8; }
+      
+      .service { fill: #ffffff; stroke: #34495e; stroke-width: 1.5; rx: 6; }
+      .database { fill: #f8f9fa; stroke: #6c757d; stroke-width: 1.5; rx: 4; }
+      .infra { fill: #e9ecef; stroke: #495057; stroke-width: 1.5; rx: 4; }
+      
+      .network-flow { stroke: #3498db; stroke-width: 2; fill: none; marker-end: url(#blueArrow); }
+      .data-flow { stroke: #27ae60; stroke-width: 2; fill: none; marker-end: url(#greenArrow); }
+      .deploy-flow { stroke: #e67e22; stroke-width: 2; fill: none; marker-end: url(#orangeArrow); }
+    </style>
+    
+    <marker id="blueArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3498db" />
+    </marker>
+    <marker id="greenArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60" />
+    </marker>
+    <marker id="orangeArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e67e22" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="650" y="30" text-anchor="middle" class="title">KMS-SFDC Deployment Architecture</text>
+  <text x="650" y="50" text-anchor="middle" class="small-text">Multi-Environment Production Deployment with CI/CD Pipeline</text>
+  
+  <!-- Development Environment -->
+  <rect x="50" y="80" width="380" height="200" class="dev-env"/>
+  <text x="70" y="105" class="env-title">Development Environment</text>
+  
+  <rect x="70" y="120" width="160" height="70" class="service"/>
+  <text x="150" y="140" text-anchor="middle" class="component-title">Local Development</text>
+  <text x="90" y="160" class="text">• UV package manager</text>
+  <text x="90" y="175" class="text">• Mock SFDC data</text>
+  
+  <rect x="250" y="120" width="160" height="70" class="service"/>
+  <text x="330" y="140" text-anchor="middle" class="component-title">API Server</text>
+  <text x="270" y="160" class="text">• FastAPI development</text>
+  <text x="270" y="175" class="text">• Hot reload enabled</text>
+  
+  <rect x="70" y="200" width="160" height="70" class="database"/>
+  <text x="150" y="220" text-anchor="middle" class="component-title">Vector Index</text>
+  <text x="90" y="240" class="text">• Local file storage</text>
+  <text x="90" y="255" class="text">• 1K sample cases</text>
+  
+  <rect x="250" y="200" width="160" height="70" class="infra"/>
+  <text x="330" y="220" text-anchor="middle" class="component-title">Testing Tools</text>
+  <text x="270" y="240" class="text">• pytest + coverage</text>
+  <text x="270" y="255" class="text">• Integration tests</text>
+  
+  <!-- Staging Environment -->
+  <rect x="460" y="80" width="380" height="200" class="staging-env"/>
+  <text x="480" y="105" class="env-title">Staging Environment</text>
+  
+  <rect x="480" y="120" width="170" height="70" class="service"/>
+  <text x="565" y="140" text-anchor="middle" class="component-title">Docker Container</text>
+  <text x="500" y="160" class="text">• Python 3.11 image</text>
+  <text x="500" y="175" class="text">• Multi-stage build</text>
+  
+  <rect x="670" y="120" width="150" height="70" class="service"/>
+  <text x="745" y="140" text-anchor="middle" class="component-title">Load Balancer</text>
+  <text x="690" y="160" class="text">• NGINX proxy</text>
+  <text x="690" y="175" class="text">• SSL termination</text>
+  
+  <rect x="480" y="200" width="170" height="70" class="database"/>
+  <text x="565" y="220" text-anchor="middle" class="component-title">Persistent Storage</text>
+  <text x="500" y="240" class="text">• Docker volumes</text>
+  <text x="500" y="255" class="text">• 100K test cases</text>
+  
+  <rect x="670" y="200" width="150" height="70" class="infra"/>
+  <text x="745" y="220" text-anchor="middle" class="component-title">Monitoring</text>
+  <text x="690" y="240" class="text">• Health checks</text>
+  <text x="690" y="255" class="text">• Basic metrics</text>
+  
+  <!-- Production Environment -->
+  <rect x="870" y="80" width="380" height="200" class="prod-env"/>
+  <text x="890" y="105" class="env-title">Production Environment</text>
+  
+  <rect x="890" y="120" width="170" height="70" class="service"/>
+  <text x="975" y="140" text-anchor="middle" class="component-title">Kubernetes Cluster</text>
+  <text x="910" y="160" class="text">• Auto-scaling pods</text>
+  <text x="910" y="175" class="text">• 3+ replicas</text>
+  
+  <rect x="1080" y="120" width="150" height="70" class="service"/>
+  <text x="1155" y="140" text-anchor="middle" class="component-title">Ingress</text>
+  <text x="1100" y="160" class="text">• External access</text>
+  <text x="1100" y="175" class="text">• Rate limiting</text>
+  
+  <rect x="890" y="200" width="170" height="70" class="database"/>
+  <text x="975" y="220" text-anchor="middle" class="component-title">Persistent Volumes</text>
+  <text x="910" y="240" class="text">• SSD storage</text>
+  <text x="910" y="255" class="text">• 2.5M+ cases</text>
+  
+  <rect x="1080" y="200" width="150" height="70" class="infra"/>
+  <text x="1155" y="220" text-anchor="middle" class="component-title">Observability</text>
+  <text x="1100" y="240" class="text">• Prometheus</text>
+  <text x="1100" y="255" class="text">• Grafana</text>
+  
+  <!-- External Systems -->
+  <rect x="50" y="320" width="300" height="100" class="external"/>
+  <text x="70" y="345" class="env-title">External Systems</text>
+  
+  <rect x="70" y="360" width="120" height="50" class="service"/>
+  <text x="130" y="380" text-anchor="middle" class="component-title">Salesforce</text>
+  <text x="90" y="395" class="text">Production Org</text>
+  
+  <rect x="210" y="360" width="120" height="50" class="service"/>
+  <text x="270" y="380" text-anchor="middle" class="component-title">Cognate AI</text>
+  <text x="230" y="395" class="text">Integration</text>
+  
+  <!-- CI/CD Pipeline -->
+  <rect x="380" y="320" width="540" height="100" class="staging-env"/>
+  <text x="400" y="345" class="env-title">CI/CD Pipeline (GitHub Actions)</text>
+  
+  <rect x="400" y="360" width="100" height="50" class="infra"/>
+  <text x="450" y="380" text-anchor="middle" class="component-title">Source</text>
+  <text x="420" y="395" class="text">Git Push</text>
+  
+  <rect x="520" y="360" width="100" height="50" class="infra"/>
+  <text x="570" y="380" text-anchor="middle" class="component-title">Build</text>
+  <text x="540" y="395" class="text">UV Install</text>
+  
+  <rect x="640" y="360" width="100" height="50" class="infra"/>
+  <text x="690" y="380" text-anchor="middle" class="component-title">Test</text>
+  <text x="660" y="395" class="text">Pytest</text>
+  
+  <rect x="760" y="360" width="100" height="50" class="infra"/>
+  <text x="810" y="380" text-anchor="middle" class="component-title">Deploy</text>
+  <text x="780" y="395" class="text">Docker</text>
+  
+  <!-- Resource Specifications -->
+  <rect x="50" y="450" width="600" height="160" class="dev-env"/>
+  <text x="70" y="475" class="env-title">Resource Specifications</text>
+  
+  <rect x="80" y="490" width="170" height="110" class="service"/>
+  <text x="165" y="510" text-anchor="middle" class="component-title">Development</text>
+  <text x="100" y="530" class="spec-text">CPU: 4+ cores</text>
+  <text x="100" y="545" class="spec-text">RAM: 8GB minimum</text>
+  <text x="100" y="560" class="spec-text">Storage: 20GB SSD</text>
+  <text x="100" y="575" class="spec-text">Network: Local</text>
+  <text x="100" y="590" class="spec-text">Latency: N/A</text>
+  
+  <rect x="270" y="490" width="170" height="110" class="service"/>
+  <text x="355" y="510" text-anchor="middle" class="component-title">Staging</text>
+  <text x="290" y="530" class="spec-text">CPU: 8 cores</text>
+  <text x="290" y="545" class="spec-text">RAM: 16GB</text>
+  <text x="290" y="560" class="spec-text">Storage: 100GB SSD</text>
+  <text x="290" y="575" class="spec-text">Network: 1Gbps</text>
+  <text x="290" y="590" class="spec-text">Latency: &lt;200ms</text>
+  
+  <rect x="460" y="490" width="170" height="110" class="service"/>
+  <text x="545" y="510" text-anchor="middle" class="component-title">Production</text>
+  <text x="480" y="530" class="spec-text">CPU: 16+ cores</text>
+  <text x="480" y="545" class="spec-text">RAM: 32GB+</text>
+  <text x="480" y="560" class="spec-text">Storage: 500GB SSD</text>
+  <text x="480" y="575" class="spec-text">Network: 10Gbps</text>
+  <text x="480" y="590" class="spec-text">Latency: &lt;100ms</text>
+  
+  <!-- Security & Compliance -->
+  <rect x="680" y="450" width="570" height="160" class="external"/>
+  <text x="700" y="475" class="env-title">Security &amp; Compliance</text>
+  
+  <rect x="710" y="490" width="170" height="110" class="service"/>
+  <text x="795" y="510" text-anchor="middle" class="component-title">Authentication</text>
+  <text x="730" y="530" class="text">• SFDC OAuth 2.0</text>
+  <text x="730" y="545" class="text">• API key management</text>
+  <text x="730" y="560" class="text">• Secret rotation</text>
+  <text x="730" y="575" class="text">• Environment isolation</text>
+  <text x="730" y="590" class="text">• Access logging</text>
+  
+  <rect x="900" y="490" width="170" height="110" class="service"/>
+  <text x="985" y="510" text-anchor="middle" class="component-title">Data Protection</text>
+  <text x="920" y="530" class="text">• Encryption at rest</text>
+  <text x="920" y="545" class="text">• TLS in transit</text>
+  <text x="920" y="560" class="text">• PII handling</text>
+  <text x="920" y="575" class="text">• Backup policies</text>
+  <text x="920" y="590" class="text">• Audit trails</text>
+  
+  <rect x="1090" y="490" width="140" height="110" class="service"/>
+  <text x="1160" y="510" text-anchor="middle" class="component-title">Compliance</text>
+  <text x="1110" y="530" class="text">• SOC 2 Type II</text>
+  <text x="1110" y="545" class="text">• GDPR ready</text>
+  <text x="1110" y="560" class="text">• HPE standards</text>
+  <text x="1110" y="575" class="text">• Regular audits</text>
+  <text x="1110" y="590" class="text">• Documentation</text>
+  
+  <!-- Scaling Strategy -->
+  <rect x="50" y="640" width="1200" height="120" class="prod-env"/>
+  <text x="70" y="665" class="env-title">Horizontal Scaling Strategy</text>
+  
+  <rect x="80" y="680" width="180" height="70" class="service"/>
+  <text x="170" y="700" text-anchor="middle" class="component-title">Auto-scaling</text>
+  <text x="100" y="720" class="text">• CPU/Memory triggers</text>
+  <text x="100" y="735" class="text">• Min 3, Max 20 pods</text>
+  
+  <rect x="280" y="680" width="180" height="70" class="service"/>
+  <text x="370" y="700" text-anchor="middle" class="component-title">Load Distribution</text>
+  <text x="300" y="720" class="text">• Round-robin routing</text>
+  <text x="300" y="735" class="text">• Health-based failover</text>
+  
+  <rect x="480" y="680" width="180" height="70" class="service"/>
+  <text x="570" y="700" text-anchor="middle" class="component-title">Index Replication</text>
+  <text x="500" y="720" class="text">• Read-only replicas</text>
+  <text x="500" y="735" class="text">• Shared storage</text>
+  
+  <rect x="680" y="680" width="180" height="70" class="service"/>
+  <text x="770" y="700" text-anchor="middle" class="component-title">Cache Layer</text>
+  <text x="700" y="720" class="text">• Redis for hot queries</text>
+  <text x="700" y="735" class="text">• TTL-based eviction</text>
+  
+  <rect x="880" y="680" width="180" height="70" class="service"/>
+  <text x="970" y="700" text-anchor="middle" class="component-title">CDN Integration</text>
+  <text x="900" y="720" class="text">• Static asset caching</text>
+  <text x="900" y="735" class="text">• Global distribution</text>
+  
+  <rect x="1080" y="680" width="150" height="70" class="service"/>
+  <text x="1155" y="700" text-anchor="middle" class="component-title">Monitoring</text>
+  <text x="1100" y="720" class="text">• Real-time alerts</text>
+  <text x="1100" y="735" class="text">• Performance SLIs</text>
+  
+  <!-- Disaster Recovery -->
+  <rect x="50" y="790" width="1200" height="80" class="external"/>
+  <text x="70" y="815" class="env-title">Disaster Recovery &amp; Business Continuity</text>
+  
+  <text x="80" y="840" class="text">• Multi-zone deployment with automatic failover</text>
+  <text x="80" y="855" class="text">• Automated backup every 6 hours to separate region</text>
+  
+  <text x="450" y="840" class="text">• Recovery Time Objective (RTO): 15 minutes</text>
+  <text x="450" y="855" class="text">• Recovery Point Objective (RPO): 6 hours</text>
+  
+  <text x="800" y="840" class="text">• Blue-green deployment for zero-downtime updates</text>
+  <text x="800" y="855" class="text">• Automated rollback on deployment failures</text>
+  
+  <!-- Network Flow Arrows -->
+  <line x1="430" y1="155" x2="460" y2="155" class="deploy-flow"/>
+  <line x1="840" y1="155" x2="870" y2="155" class="deploy-flow"/>
+  
+  <line x1="200" y1="320" x2="200" y2="360" class="data-flow"/>
+  <line x1="650" y1="280" x2="650" y2="320" class="network-flow"/>
+  <line x1="1060" y1="280" x2="1060" y2="320" class="network-flow"/>
+  
+  <!-- CI/CD Flow -->
+  <line x1="500" y1="385" x2="520" y2="385" class="deploy-flow"/>
+  <line x1="620" y1="385" x2="640" y2="385" class="deploy-flow"/>
+  <line x1="740" y1="385" x2="760" y2="385" class="deploy-flow"/>
+</svg>

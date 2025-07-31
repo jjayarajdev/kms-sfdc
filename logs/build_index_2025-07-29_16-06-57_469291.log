@@ -1,0 +1,4 @@
+2025-07-29 16:06:57.471 | INFO     | __main__:main:37 - Starting FAISS index build process
+2025-07-29 16:06:57.471 | INFO     | __main__:main:50 - Initializing SFDC client...
+2025-07-29 16:06:57.471 | ERROR    | src.data_extraction.sfdc_client:_connect:45 - Failed to connect to Salesforce: Salesforce.__init__() got an unexpected keyword argument 'client_secret'
+2025-07-29 16:06:57.471 | ERROR    | __main__:main:142 - Error during index build: Salesforce.__init__() got an unexpected keyword argument 'client_secret'

@@ -1,0 +1,279 @@
+pipeline {
+    agent any
+    
+    parameters {
+        choice(
+            name: 'BUILD_TYPE',
+            choices: ['incremental', 'full_rebuild'],
+            description: 'Type of vector database build'
+        )
+        string(
+            name: 'MAX_RECORDS',
+            defaultValue: '',
+            description: 'Maximum number of records to process (empty for all)'
+        )
+    }
+    
+    environment {
+        PYTHON_ENV = 'kms-sfdc-venv'
+        PROJECT_DIR = '/opt/kms-sfdc'
+        VECTOR_DB_PATH = "${PROJECT_DIR}/data"
+        BACKUP_PATH = "${PROJECT_DIR}/backups"
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+                script {
+                    env.BUILD_TIMESTAMP = sh(
+                        script: "date '+%Y%m%d_%H%M%S'",
+                        returnStdout: true
+                    ).trim()
+                }
+            }
+        }
+        
+        stage('Environment Setup') {
+            steps {
+                sh '''
+                    # Install UV if not present
+                    if ! command -v uv &> /dev/null; then
+                        curl -LsSf https://astral.sh/uv/install.sh | sh
+                        export PATH="$HOME/.cargo/bin:$PATH"
+                    fi
+                    
+                    # Install dependencies with UV (much faster than pip)
+                    uv sync --dev
+                    
+                    # Setup Nomic for local embeddings
+                    uv run python scripts/setup_nomic.py
+                '''
+            }
+        }
+        
+        stage('Data Quality Checks') {
+            steps {
+                sh '''
+                    # Test SFDC connection
+                    uv run python -c "
+                    from src.data_extraction import SFDCClient
+                    client = SFDCClient()
+                    assert client.test_connection(), 'SFDC connection failed'
+                    print('SFDC connection verified')
+                    "
+                    
+                    # Test CFI access
+                    uv run python -c "
+                    from src.data_extraction import CFIClient
+                    client = CFIClient()
+                    assert client.validate_cfi_access(), 'CFI access failed'
+                    print('CFI access verified')
+                    "
+                    
+                    # Test Nomic embeddings
+                    uv run python -c "
+                    from src.vectorization import VectorDatabase
+                    vdb = VectorDatabase()
+                    test_emb = vdb.create_embeddings(['test case'])
+                    assert test_emb.shape[1] == 768, 'Embedding dimension mismatch'
+                    print('Nomic embeddings verified')
+                    "
+                '''
+            }
+        }
+        
+        stage('Backup Existing Index') {
+            when {
+                expression { fileExists("${VECTOR_DB_PATH}/faiss_index.bin") }
+            }
+            steps {
+                sh '''
+                    mkdir -p ${BACKUP_PATH}/${BUILD_TIMESTAMP}
+                    
+                    if [ -f "${VECTOR_DB_PATH}/faiss_index.bin" ]; then
+                        cp ${VECTOR_DB_PATH}/faiss_index.bin ${BACKUP_PATH}/${BUILD_TIMESTAMP}/
+                        cp ${VECTOR_DB_PATH}/case_metadata.json ${BACKUP_PATH}/${BUILD_TIMESTAMP}/
+                        echo "Vector database backed up to ${BACKUP_PATH}/${BUILD_TIMESTAMP}"
+                    fi
+                '''
+            }
+        }
+        
+        stage('Build Vector Database') {
+            steps {
+                sh '''
+                    # Determine build parameters
+                    BUILD_CMD="uv run python scripts/build_index.py"
+                    
+                    if [ -n "${MAX_RECORDS}" ]; then
+                        BUILD_CMD="${BUILD_CMD} --max-records ${MAX_RECORDS}"
+                    fi
+                    
+                    if [ "${BUILD_TYPE}" = "incremental" ] && [ -f "${VECTOR_DB_PATH}/faiss_index.bin" ]; then
+                        echo "Performing incremental build..."
+                        # Add incremental build logic here
+                        BUILD_CMD="${BUILD_CMD} --incremental"
+                    else
+                        echo "Performing full rebuild..."
+                    fi
+                    
+                    # Execute build
+                    ${BUILD_CMD}
+                    
+                    # Verify build success
+                    if [ ! -f "${VECTOR_DB_PATH}/faiss_index.bin" ]; then
+                        echo "ERROR: Vector database build failed - index file not found"
+                        exit 1
+                    fi
+                    
+                    # Get build statistics
+                    uv run python -c "
+                    from src.vectorization import VectorDatabase
+                    vdb = VectorDatabase()
+                    vdb.load_index()
+                    stats = vdb.get_stats()
+                    print(f'Build completed: {stats[\"total_vectors\"]} vectors indexed')
+                    "
+                '''
+            }
+        }
+        
+        stage('Quality Validation') {
+            steps {
+                sh '''
+                    # Test vector database functionality
+                    uv run python -c "
+                    from src.vectorization import VectorDatabase
+                    
+                    # Load and test vector database
+                    vdb = VectorDatabase()
+                    vdb.load_index()
+                    
+                    # Test search functionality
+                    results = vdb.search('login issues', top_k=5)
+                    assert len(results) > 0, 'Search returned no results'
+                    
+                    # Validate result format
+                    for result in results:
+                        assert 'similarity_score' in result, 'Missing similarity score'
+                        assert 'case_id' in result, 'Missing case ID'
+                        assert result['similarity_score'] > 0, 'Invalid similarity score'
+                    
+                    print(f'Quality validation passed: {len(results)} test results')
+                    "
+                    
+                    # Test Cognate AI integration
+                    uv run python scripts/cognate_ai_integration.py
+                '''
+            }
+        }
+        
+        stage('Deploy to ITG') {
+            when {
+                branch 'develop'
+            }
+            steps {
+                sh '''
+                    # Deploy to ITG environment
+                    echo "Deploying to ITG environment..."
+                    
+                    # Copy vector database files to ITG
+                    scp ${VECTOR_DB_PATH}/faiss_index.bin itg-server:/opt/cognate-ai/vector-db/
+                    scp ${VECTOR_DB_PATH}/case_metadata.json itg-server:/opt/cognate-ai/vector-db/
+                    
+                    # Restart Cognate AI services on ITG
+                    ssh itg-server "sudo systemctl restart cognate-ai"
+                    
+                    # Verify deployment
+                    sleep 30
+                    curl -f http://itg-server:8000/health || exit 1
+                    
+                    echo "ITG deployment completed successfully"
+                '''
+            }
+        }
+        
+        stage('Deploy to Production') {
+            when {
+                branch 'main'
+            }
+            steps {
+                input message: 'Deploy to Production?', ok: 'Deploy'
+                
+                sh '''
+                    # Deploy to production environment
+                    echo "Deploying to Production environment..."
+                    
+                    # Copy vector database files to production
+                    scp ${VECTOR_DB_PATH}/faiss_index.bin prod-server:/opt/cognate-ai/vector-db/
+                    scp ${VECTOR_DB_PATH}/case_metadata.json prod-server:/opt/cognate-ai/vector-db/
+                    
+                    # Rolling deployment to production instances
+                    for instance in prod-server-1 prod-server-2; do
+                        echo "Deploying to $instance..."
+                        ssh $instance "sudo systemctl restart cognate-ai"
+                        sleep 60
+                        curl -f http://$instance:8000/health || exit 1
+                    done
+                    
+                    echo "Production deployment completed successfully"
+                '''
+            }
+        }
+    }
+    
+    post {
+        always {
+            // Archive build artifacts
+            archiveArtifacts artifacts: 'logs/*.log', allowEmptyArchive: true
+            
+            // Clean up old backups (keep last 10)
+            sh '''
+                cd ${BACKUP_PATH}
+                ls -t | tail -n +11 | xargs -r rm -rf
+            '''
+        }
+        
+        success {
+            // Notify stakeholders of successful build
+            emailext (
+                subject: "KMS-SFDC Vector DB Build Successful - ${env.BUILD_NUMBER}",
+                body: """
+                Vector database build completed successfully.
+                
+                Build Type: ${params.BUILD_TYPE}
+                Build Number: ${env.BUILD_NUMBER}
+                Timestamp: ${env.BUILD_TIMESTAMP}
+                
+                The updated vector database has been deployed and is ready for use in Cognate AI.
+                """,
+                to: "${env.GSR_EMAIL},${env.DE_EMAIL}"
+            )
+        }
+        
+        failure {
+            // Restore from backup if build failed
+            sh '''
+                if [ -f "${BACKUP_PATH}/${BUILD_TIMESTAMP}/faiss_index.bin" ]; then
+                    echo "Restoring from backup due to build failure..."
+                    cp ${BACKUP_PATH}/${BUILD_TIMESTAMP}/* ${VECTOR_DB_PATH}/
+                fi
+            '''
+            
+            // Notify stakeholders of build failure
+            emailext (
+                subject: "KMS-SFDC Vector DB Build Failed - ${env.BUILD_NUMBER}",
+                body: """
+                Vector database build failed.
+                
+                Build Number: ${env.BUILD_NUMBER}
+                Timestamp: ${env.BUILD_TIMESTAMP}
+                
+                Please check the build logs for details. Previous version has been restored.
+                """,
+                to: "${env.GSR_EMAIL},${env.DE_EMAIL},${env.SRE_EMAIL}"
+            )
+        }
+    }
+}

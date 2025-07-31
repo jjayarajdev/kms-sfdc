@@ -1,0 +1,36 @@
+uv run python scripts/run_api.py
+/Users/jjayaraj/workspaces/HPE/KMS-SFDC/.venv/lib/python3.11/site-packages/pydantic/_internal/_fields.py:127: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+2025-07-29 20:23:14.288 | INFO     | src.vectorization.vector_db:load_index:461 - FAISS index loaded from data/faiss_index.bin (size: 0.0MB)
+2025-07-29 20:23:14.288 | INFO     | src.vectorization.vector_db:load_index:468 - Metadata loaded from data/case_metadata.json
+2025-07-29 20:23:14.288 | INFO     | src.vectorization.vector_db:_load_model:41 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-29 20:23:14.300 | INFO     | src.vectorization.vector_db:_load_model:45 - Using device: mps
+2025-07-29 20:23:17.785 | INFO     | src.vectorization.vector_db:_load_model:50 - Model loaded successfully for local execution
+2025-07-29 20:23:17.785 | INFO     | src.vectorization.vector_db:load_index:474 - Vector database ready with 23 vectors
+2025-07-29 20:23:17.785 | INFO     | src.search.api:<module>:80 - Vector database loaded successfully
+INFO:     Started server process [83692]
+INFO:     Waiting for application startup.
+2025-07-29 20:23:17.795 | INFO     | src.search.api:startup_event:90 - KMS-SFDC Vector Search API starting up
+2025-07-29 20:23:17.796 | INFO     | src.utils.health_monitor:start_monitoring:70 - Health monitoring started with 60s interval
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8008 (Press CTRL+C to quit)
+2025-07-29 20:23:22.570 | DEBUG    | src.vectorization.vector_db:search:355 - Searching for similar cases: 'server reboot...'
+2025-07-29 20:23:22.570 | INFO     | src.vectorization.vector_db:create_embeddings:84 - Creating embeddings for 1 texts
+/Users/jjayaraj/workspaces/HPE/KMS-SFDC/.venv/lib/python3.11/site-packages/torch/nn/modules/module.py:1762: FutureWarning: `encoder_attention_mask` is deprecated and will be removed in version 4.55.0 for `BertSdpaSelfAttention.forward`.
+  return forward_call(*args, **kwargs)
+2025-07-29 20:23:22.679 | INFO     | src.vectorization.vector_db:create_embeddings:98 - Created embeddings with shape: (1, 384)
+2025-07-29 20:23:22.681 | INFO     | src.vectorization.vector_db:search:384 - Found 2 similar cases above threshold 0.4
+2025-07-29 20:23:22.681 | INFO     | src.search.api:search_similar_cases:152 - Search completed in 111.24ms, found 2 results
+INFO:     127.0.0.1:58161 - "POST /search HTTP/1.1" 200 OK
+2025-07-29 20:23:38.888 | DEBUG    | src.vectorization.vector_db:search:355 - Searching for similar cases: 'server reboot
+...'
+2025-07-29 20:23:38.888 | INFO     | src.vectorization.vector_db:create_embeddings:84 - Creating embeddings for 1 texts
+2025-07-29 20:23:38.940 | INFO     | src.vectorization.vector_db:create_embeddings:98 - Created embeddings with shape: (1, 384)
+2025-07-29 20:23:38.941 | INFO     | src.vectorization.vector_db:search:384 - Found 2 similar cases above threshold 0.4
+2025-07-29 20:23:38.941 | INFO     | src.search.api:search_similar_cases:152 - Search completed in 52.92ms, found 2 results
+INFO:     127.0.0.1:58188 - "POST /search HTTP/1.1" 200 OK
+make: *** [run-api] Error 137
+/Users/jjayaraj/.pyenv/versions/3.11.12/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

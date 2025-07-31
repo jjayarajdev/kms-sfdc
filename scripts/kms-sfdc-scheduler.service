@@ -1,0 +1,24 @@
+[Unit]
+Description=KMS-SFDC Vector Database API with Scheduler
+After=network.target
+
+[Service]
+Type=simple
+User=kms-sfdc
+Group=kms-sfdc
+WorkingDirectory=/opt/kms-sfdc
+Environment="PATH=/opt/kms-sfdc/venv/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="PYTHONPATH=/opt/kms-sfdc"
+ExecStart=/opt/kms-sfdc/venv/bin/python -m uvicorn src.search.api:app --host 0.0.0.0 --port 8008
+Restart=always
+RestartSec=10
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/kms-sfdc/data /opt/kms-sfdc/logs
+
+[Install]
+WantedBy=multi-user.target

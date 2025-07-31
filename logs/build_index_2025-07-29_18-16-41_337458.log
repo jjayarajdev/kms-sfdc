@@ -1,0 +1,50 @@
+2025-07-29 18:16:41.339 | INFO     | __main__:main:37 - Starting FAISS index build process
+2025-07-29 18:16:41.339 | INFO     | __main__:main:50 - Initializing SFDC client...
+2025-07-29 18:16:41.339 | INFO     | src.data_extraction.sfdc_client:_connect:34 - Connecting to Salesforce with:
+2025-07-29 18:16:41.340 | INFO     | src.data_extraction.sfdc_client:_connect:35 -   Username: jaykarki@algo.com
+2025-07-29 18:16:41.340 | INFO     | src.data_extraction.sfdc_client:_connect:36 -   Login URL: https://login.salesforce.com
+2025-07-29 18:16:41.340 | INFO     | src.data_extraction.sfdc_client:_connect:37 -   Domain: login
+2025-07-29 18:16:41.340 | INFO     | src.data_extraction.sfdc_client:_connect:38 -   API Version: 58.0
+2025-07-29 18:16:41.340 | INFO     | src.data_extraction.sfdc_client:_connect:39 -   Security Token: ************************
+2025-07-29 18:16:42.825 | INFO     | src.data_extraction.sfdc_client:_connect:49 - Successfully connected to Salesforce
+2025-07-29 18:16:43.333 | INFO     | src.data_extraction.sfdc_client:test_connection:220 - Salesforce connection test successful
+2025-07-29 18:16:43.333 | INFO     | __main__:main:58 - Initializing text processor...
+2025-07-29 18:16:43.334 | INFO     | __main__:main:61 - Initializing vector database...
+2025-07-29 18:16:43.334 | INFO     | __main__:main:65 - Extracting case data from Salesforce...
+2025-07-29 18:16:44.675 | INFO     | __main__:main:74 - Processing batch 1 with 200 records
+2025-07-29 18:16:44.675 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 200 case records
+2025-07-29 18:16:45.755 | INFO     | __main__:main:74 - Processing batch 2 with 200 records
+2025-07-29 18:16:45.755 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 200 case records
+2025-07-29 18:16:46.811 | INFO     | __main__:main:74 - Processing batch 3 with 200 records
+2025-07-29 18:16:46.812 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 200 case records
+2025-07-29 18:16:48.057 | INFO     | __main__:main:74 - Processing batch 4 with 200 records
+2025-07-29 18:16:48.057 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 200 case records
+2025-07-29 18:16:48.870 | INFO     | __main__:main:74 - Processing batch 5 with 200 records
+2025-07-29 18:16:48.871 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 200 case records
+2025-07-29 18:16:48.913 | INFO     | src.utils.text_processor:preprocess_case_data:69 - Filtered out 1 records with insufficient text
+2025-07-29 18:16:49.230 | INFO     | __main__:main:74 - Processing batch 6 with 200 records
+2025-07-29 18:16:49.230 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 200 case records
+2025-07-29 18:16:49.236 | INFO     | src.utils.text_processor:preprocess_case_data:69 - Filtered out 200 records with insufficient text
+2025-07-29 18:16:49.527 | INFO     | __main__:main:74 - Processing batch 7 with 200 records
+2025-07-29 18:16:49.527 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 200 case records
+2025-07-29 18:16:49.542 | INFO     | src.utils.text_processor:preprocess_case_data:69 - Filtered out 200 records with insufficient text
+2025-07-29 18:16:49.866 | INFO     | __main__:main:74 - Processing batch 8 with 200 records
+2025-07-29 18:16:49.867 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 200 case records
+2025-07-29 18:16:49.885 | INFO     | src.utils.text_processor:preprocess_case_data:69 - Filtered out 200 records with insufficient text
+2025-07-29 18:16:50.215 | INFO     | __main__:main:74 - Processing batch 9 with 200 records
+2025-07-29 18:16:50.216 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 200 case records
+2025-07-29 18:16:50.234 | INFO     | src.utils.text_processor:preprocess_case_data:69 - Filtered out 200 records with insufficient text
+2025-07-29 18:16:50.582 | INFO     | __main__:main:74 - Processing batch 10 with 200 records
+2025-07-29 18:16:50.583 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 200 case records
+2025-07-29 18:16:50.601 | INFO     | src.utils.text_processor:preprocess_case_data:69 - Filtered out 200 records with insufficient text
+2025-07-29 18:16:50.930 | INFO     | __main__:main:74 - Processing batch 11 with 85 records
+2025-07-29 18:16:50.930 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 85 case records
+2025-07-29 18:16:50.942 | INFO     | src.utils.text_processor:preprocess_case_data:69 - Filtered out 85 records with insufficient text
+2025-07-29 18:16:50.948 | INFO     | __main__:main:100 - Extracted 999 case records
+2025-07-29 18:16:50.948 | INFO     | __main__:main:103 - Processing text data...
+2025-07-29 18:16:50.949 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 999 case records
+2025-07-29 18:16:51.431 | INFO     | src.utils.text_processor:get_text_stats:216 - Text statistics: {'total_records': 999, 'avg_text_length': 9076.28128128128, 'min_text_length': 446, 'max_text_length': 20180, 'median_text_length': 10720.0, 'empty_text_count': 0}
+2025-07-29 18:16:51.431 | INFO     | __main__:main:108 - Text processing complete. Stats: {'total_records': 999, 'avg_text_length': 9076.28128128128, 'min_text_length': 446, 'max_text_length': 20180, 'median_text_length': 10720.0, 'empty_text_count': 0}
+2025-07-29 18:16:51.431 | INFO     | __main__:main:111 - Building FAISS vector index...
+2025-07-29 18:16:51.431 | INFO     | src.vectorization.vector_db:build_index:91 - Building production-scale FAISS index from 999 cases
+2025-07-29 18:16:51.431 | INFO     | src.vectorization.vector_db:_load_model:35 - Loading embedding model: nomic-embed-text-v1.5

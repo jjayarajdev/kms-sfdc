@@ -1,0 +1,22 @@
+Build a vector DB of case issues and resolutions for 2 years’ worth of Pan-HPE SFDC case data.  
+Update the vector DB in the form of FAISS (Facebook AI similarity search) usable directly inside Cognate AI 
+Build a pipeline to update the vector DB in a scheduled cadence 
+Test similar case and resolution search using the implemented Vector DB and align the accuracy with GSR 
+Scope should also include CFIs and other sources as currently searched by Engineers – guidance needed from Guru and Satish 
+Inclusions :
+2 years of case data, CFIs (GSR to give more info), any other sources currently used by engineers (GSR to give more info)
+Fields should include all text fields of case data like issue / subject / resolution / notes. (GSR to confirm).
+Exclusions :
+KM articles which are already in Coveo
+Milestones :
+Finalization of fields to be vectorized with GSR/ DE : AC – GSR sign off on the fields
+Initial Vectorization and saving as FAISS file : AC – showcase that any randomly selected case details are vectorized
+Creation of test data along with GSR / DE : AC – GSR sign of on the test data
+Accuracy measurement using provided test set of data and iteration on vectorization alongside : AC – GSR sign off on the accepted accuracy level
+Update of the vector db in Cognate AI – keeping current functionalities intact : AC – addition of unit and fitness / regression tests, with build success
+Creation of a pipeline to do the vectorization on a scheduled manner : AC – 1) SRE, Security signoff, 2) Demo update of vectorDB 3) Schedule done as per GSR advice
+New Jenkins job might be needed
+SMART involvement to be aligned
+NFRs to be met – including monitoring, alerting, supportability
+Security aspects to be aligned
+Deployed to ITG/PRO : AC – KM Generation Agent is able to call updated vectorDB with replacement of API2 : Coveo case lexical search

@@ -1,0 +1,24 @@
+{
+  "jobs": [
+    {
+      "id": "sfdc_sync",
+      "name": "SFDC Data Sync",
+      "description": "Synchronize new and updated cases from Salesforce",
+      "enabled": true,
+      "schedule": {
+        "type": "interval",
+        "interval_minutes": 5,
+        "time": null,
+        "expression": null
+      },
+      "last_run": "2025-07-30T09:35:34.878210",
+      "next_run": null,
+      "status": "completed",
+      "last_error": null,
+      "last_success": "2025-07-30T09:35:40.155671"
+    }
+  ],
+  "timezone": "UTC",
+  "max_retries": 3,
+  "retry_delay_seconds": 300
+}

@@ -1,0 +1,4180 @@
+[
+  {
+    "timestamp": "2025-07-29T19:53:21.369260",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 8.8,
+        "memory_usage_percent": 65.0,
+        "memory_available_gb": 12.585052490234375,
+        "disk_free_gb": 375.2311096191406,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 85.296875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.0002807013193766276,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.0015550244444444,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:08:05.928830",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.9,
+        "memory_usage_percent": 63.0,
+        "memory_available_gb": 13.309127807617188,
+        "disk_free_gb": 374.91346740722656,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 85.640625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.00028047197394900854,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.2472657919444443,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:08:27.720001",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 5.7,
+        "memory_usage_percent": 66.3,
+        "memory_available_gb": 12.129608154296875,
+        "disk_free_gb": 374.91002655029297,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 474.328125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.0012632246812184652,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.2533168680555558,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:08:34.728317",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 3.2,
+        "memory_usage_percent": 64.5,
+        "memory_available_gb": 12.7716064453125,
+        "disk_free_gb": 374.90998458862305,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 476.59375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.0032122413979636297,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.2552659311111112,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:09:27.603758",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 9.0,
+        "memory_usage_percent": 64.0,
+        "memory_available_gb": 12.945785522460938,
+        "disk_free_gb": 374.9160842895508,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 478.671875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.017900950842433507,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.2699546275,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:09:28.633418",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 1.6,
+        "memory_usage_percent": 64.1,
+        "memory_available_gb": 12.921844482421875,
+        "disk_free_gb": 374.9160804748535,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 480.4375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.01818666444884406,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.2702403322222222,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:09:28.724971",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 1.7,
+        "memory_usage_percent": 64.2,
+        "memory_available_gb": 12.8974609375,
+        "disk_free_gb": 374.9160804748535,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 480.4375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.018212674988640678,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.2702663522222222,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:10:29.747113",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.9,
+        "memory_usage_percent": 64.0,
+        "memory_available_gb": 12.957565307617188,
+        "disk_free_gb": 375.0300483703613,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 510.375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.03516273193889194,
+        "total_requests": 6,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 74.63459173838298,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 45.5319881439209,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 1.2872164172222222,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:11:30.767816",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 4.6,
+        "memory_usage_percent": 63.7,
+        "memory_available_gb": 13.084945678710938,
+        "disk_free_gb": 375.0289764404297,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 521.734375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.05211300194263458,
+        "total_requests": 13,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 64.91928834181566,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 45.5319881439209,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 1.3041666730555554,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:12:31.788614",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 0.8,
+        "memory_usage_percent": 63.7,
+        "memory_available_gb": 13.058334350585938,
+        "disk_free_gb": 375.0285835266113,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 532.703125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.06906371004051633,
+        "total_requests": 14,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 64.15612357003349,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 45.5319881439209,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 1.3211173872222222,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:13:32.806839",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 2.1,
+        "memory_usage_percent": 64.9,
+        "memory_available_gb": 12.628707885742188,
+        "disk_free_gb": 375.0277671813965,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 532.75
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.08601188275549147,
+        "total_requests": 15,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 61.78825696309408,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 28.638124465942383,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 1.3380655347222223,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:14:33.823517",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 2.3,
+        "memory_usage_percent": 64.3,
+        "memory_available_gb": 12.868942260742188,
+        "disk_free_gb": 375.02515029907227,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 533.125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.10295968525939518,
+        "total_requests": 15,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 61.78825696309408,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 28.638124465942383,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 1.3550133486111111,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:15:34.835777",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.7,
+        "memory_usage_percent": 64.2,
+        "memory_available_gb": 12.873077392578125,
+        "disk_free_gb": 375.0276527404785,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 533.875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.11990971585114797,
+        "total_requests": 16,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 61.69213354587555,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 28.638124465942383,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 1.3719633902777777,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:16:35.856808",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 3.3,
+        "memory_usage_percent": 65.0,
+        "memory_available_gb": 12.598052978515625,
+        "disk_free_gb": 375.0278854370117,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 533.84375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 1.4634218215942383,
+        "metadata_size_mb": 0.6936416625976562,
+        "last_modified": "2025-07-29T18:53:16.781725",
+        "metadata_count": 999,
+        "backup_count": 0
+      },
+      "performance": {
+        "uptime_hours": 0.13685841666327583,
+        "total_requests": 18,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 60.68097220526801,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 28.638124465942383,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 1.3889120647222222,
+        "needs_update": false,
+        "last_update": "2025-07-29T18:53:16.781725"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:17:36.870929",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 1.6,
+        "memory_usage_percent": 61.3,
+        "memory_available_gb": 13.94659423828125,
+        "disk_free_gb": 375.0273857116699,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 533.8125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.15380609969298045,
+        "total_requests": 18,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 60.68097220526801,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 28.638124465942383,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 0.008584468333333333,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:18:37.885054",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 0.6,
+        "memory_usage_percent": 62.1,
+        "memory_available_gb": 13.630844116210938,
+        "disk_free_gb": 375.0302734375,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 533.8125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.1707547291782167,
+        "total_requests": 18,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 60.68097220526801,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 28.638124465942383,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 0.025533089999999998,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:19:38.899106",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 4.1,
+        "memory_usage_percent": 61.9,
+        "memory_available_gb": 13.723007202148438,
+        "disk_free_gb": 375.029296875,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 533.8125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.18770309223069084,
+        "total_requests": 18,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 60.68097220526801,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 28.638124465942383,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 0.04248144777777778,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:20:39.915384",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 0.7,
+        "memory_usage_percent": 62.2,
+        "memory_available_gb": 13.617279052734375,
+        "disk_free_gb": 375.02927017211914,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 533.8125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.2046520788802041,
+        "total_requests": 18,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 60.68097220526801,
+        "max_response_time_ms": 196.27904891967773,
+        "min_response_time_ms": 28.638124465942383,
+        "p95_response_time_ms": 196.27904891967773,
+        "p99_response_time_ms": 196.27904891967773
+      },
+      "data": {
+        "index_age_hours": 0.05943043944444444,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:21:15.132750",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 3.5,
+        "memory_usage_percent": 66.7,
+        "memory_available_gb": 11.98590087890625,
+        "disk_free_gb": 375.0319595336914,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 475.984375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.0012419772810406155,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 0.06921183055555555,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:21:51.452396",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 3.1,
+        "memory_usage_percent": 65.5,
+        "memory_available_gb": 12.437255859375,
+        "disk_free_gb": 375.0277099609375,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 474.296875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.001231848332617018,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 0.07930099444444445,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:22:52.761240",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 3.2,
+        "memory_usage_percent": 67.2,
+        "memory_available_gb": 11.81982421875,
+        "disk_free_gb": 375.02676010131836,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 470.78125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.001260803673002455,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 0.09633096805555556,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:23:17.796030",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 2.7,
+        "memory_usage_percent": 65.1,
+        "memory_available_gb": 12.549072265625,
+        "disk_free_gb": 375.03471755981445,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 466.609375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.001253582239151001,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 0.10328569888888889,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:41:44.065488",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.0,
+        "memory_usage_percent": 62.3,
+        "memory_available_gb": 13.565353393554688,
+        "disk_free_gb": 374.9678268432617,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.46875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.3085526758432388,
+        "total_requests": 2,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 82.07738399505615,
+        "max_response_time_ms": 111.2360954284668,
+        "min_response_time_ms": 52.91867256164551,
+        "p95_response_time_ms": 111.2360954284668,
+        "p99_response_time_ms": 111.2360954284668
+      },
+      "data": {
+        "index_age_hours": 0.4105847908333333,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T20:54:16.556677",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 21.3,
+        "memory_usage_percent": 64.5,
+        "memory_available_gb": 12.77960205078125,
+        "disk_free_gb": 375.0186233520508,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.1875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.5175759086343977,
+        "total_requests": 2,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 82.07738399505615,
+        "max_response_time_ms": 111.2360954284668,
+        "min_response_time_ms": 52.91867256164551,
+        "p95_response_time_ms": 111.2360954284668,
+        "p99_response_time_ms": 111.2360954284668
+      },
+      "data": {
+        "index_age_hours": 0.6196080194444444,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T21:23:07.080462",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 27.6,
+        "memory_usage_percent": 62.8,
+        "memory_available_gb": 13.382156372070312,
+        "disk_free_gb": 375.0158882141113,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.234375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.998277811937862,
+        "total_requests": 2,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 82.07738399505615,
+        "max_response_time_ms": 111.2360954284668,
+        "min_response_time_ms": 52.91867256164551,
+        "p95_response_time_ms": 111.2360954284668,
+        "p99_response_time_ms": 111.2360954284668
+      },
+      "data": {
+        "index_age_hours": 1.1003099380555557,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T21:24:08.098388",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 9.3,
+        "memory_usage_percent": 63.0,
+        "memory_available_gb": 13.329055786132812,
+        "disk_free_gb": 374.99357986450195,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.234375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 1.0152266294426389,
+        "total_requests": 2,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 82.07738399505615,
+        "max_response_time_ms": 111.2360954284668,
+        "min_response_time_ms": 52.91867256164551,
+        "p95_response_time_ms": 111.2360954284668,
+        "p99_response_time_ms": 111.2360954284668
+      },
+      "data": {
+        "index_age_hours": 1.1172587386111112,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T21:36:41.512494",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 5.9,
+        "memory_usage_percent": 64.5,
+        "memory_available_gb": 12.78948974609375,
+        "disk_free_gb": 374.9909477233887,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.265625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 1.2245091214444903,
+        "total_requests": 2,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 82.07738399505615,
+        "max_response_time_ms": 111.2360954284668,
+        "min_response_time_ms": 52.91867256164551,
+        "p95_response_time_ms": 111.2360954284668,
+        "p99_response_time_ms": 111.2360954284668
+      },
+      "data": {
+        "index_age_hours": 1.326541248611111,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T21:37:42.539973",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 7.9,
+        "memory_usage_percent": 64.7,
+        "memory_available_gb": 12.72369384765625,
+        "disk_free_gb": 374.9827346801758,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.265625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 1.2414601833290524,
+        "total_requests": 2,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 82.07738399505615,
+        "max_response_time_ms": 111.2360954284668,
+        "min_response_time_ms": 52.91867256164551,
+        "p95_response_time_ms": 111.2360954284668,
+        "p99_response_time_ms": 111.2360954284668
+      },
+      "data": {
+        "index_age_hours": 1.3434923069444444,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T22:08:47.146045",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.5,
+        "memory_usage_percent": 64.0,
+        "memory_available_gb": 12.965438842773438,
+        "disk_free_gb": 374.9963684082031,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.265625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 1.759406352241834,
+        "total_requests": 2,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 82.07738399505615,
+        "max_response_time_ms": 111.2360954284668,
+        "min_response_time_ms": 52.91867256164551,
+        "p95_response_time_ms": 111.2360954284668,
+        "p99_response_time_ms": 111.2360954284668
+      },
+      "data": {
+        "index_age_hours": 1.8614384800000001,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T22:25:56.368820",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 2.1,
+        "memory_usage_percent": 65.9,
+        "memory_available_gb": 12.282089233398438,
+        "disk_free_gb": 374.40814208984375,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 476.109375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.0014262836509280734,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 2.147333571388889,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T22:26:06.549293",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 9.4,
+        "memory_usage_percent": 64.0,
+        "memory_available_gb": 12.966796875,
+        "disk_free_gb": 374.40563583374023,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 476.5625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.004254959159427219,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 2.1501622519444443,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T22:26:07.576431",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 3.1,
+        "memory_usage_percent": 64.2,
+        "memory_available_gb": 12.90118408203125,
+        "disk_free_gb": 374.40563583374023,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 476.59375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.004540164139535692,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 2.150447453888889,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-29T22:26:57.382720",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 5.9,
+        "memory_usage_percent": 63.2,
+        "memory_available_gb": 13.231536865234375,
+        "disk_free_gb": 374.40147399902344,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 507.015625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.01837540030479431,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 165.9550666809082,
+        "max_response_time_ms": 165.9550666809082,
+        "min_response_time_ms": 165.9550666809082,
+        "p95_response_time_ms": 165.9550666809082,
+        "p99_response_time_ms": 165.9550666809082
+      },
+      "data": {
+        "index_age_hours": 2.1642827080555556,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T12:54:19.625859",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 5.5,
+        "memory_usage_percent": 63.7,
+        "memory_available_gb": 13.072891235351562,
+        "disk_free_gb": 374.2799491882324,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 464.96875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.0014499444431728787,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 16.620460960833334,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T12:54:44.217170",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 9.7,
+        "memory_usage_percent": 61.6,
+        "memory_available_gb": 13.80828857421875,
+        "disk_free_gb": 374.2727279663086,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 465.203125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.008281161917580498,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 16.627292188055556,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T12:54:45.245272",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 4.8,
+        "memory_usage_percent": 61.9,
+        "memory_available_gb": 13.725616455078125,
+        "disk_free_gb": 374.2727279663086,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 465.28125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.008566723863283793,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 16.627577750833336,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T12:55:20.641381",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.9,
+        "memory_usage_percent": 60.9,
+        "memory_available_gb": 14.06390380859375,
+        "disk_free_gb": 374.26549911499023,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.01839885751406352,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.63740988111111,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T12:56:21.659158",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 9.1,
+        "memory_usage_percent": 60.1,
+        "memory_available_gb": 14.35845947265625,
+        "disk_free_gb": 374.2605857849121,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.03534830305311415,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.654359330555558,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T12:57:22.674680",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 1.3,
+        "memory_usage_percent": 60.2,
+        "memory_available_gb": 14.320571899414062,
+        "disk_free_gb": 374.2660446166992,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.05229700724283854,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.67130803166667,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T12:58:23.692028",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 0.9,
+        "memory_usage_percent": 59.8,
+        "memory_available_gb": 14.457748413085938,
+        "disk_free_gb": 374.2636489868164,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.15625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.06924627668327756,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.688257301944443,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T12:59:24.707685",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 0.9,
+        "memory_usage_percent": 59.9,
+        "memory_available_gb": 14.434249877929688,
+        "disk_free_gb": 374.26229095458984,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.15625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.0861950874990887,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.705206114444444,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T13:00:25.726491",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 11.8,
+        "memory_usage_percent": 61.1,
+        "memory_available_gb": 14.001785278320312,
+        "disk_free_gb": 374.2620429992676,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.171875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.10314351307021247,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.722154519444445,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T13:01:26.732250",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 1.8,
+        "memory_usage_percent": 60.1,
+        "memory_available_gb": 14.37738037109375,
+        "disk_free_gb": 374.2654800415039,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.1875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.12009214394622379,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.739103169444444,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T13:02:27.760661",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 1.3,
+        "memory_usage_percent": 60.3,
+        "memory_available_gb": 14.306640625,
+        "disk_free_gb": 374.2635498046875,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.1875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.13704195532533858,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.756052980833335,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T13:03:28.770492",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 0.9,
+        "memory_usage_percent": 60.0,
+        "memory_available_gb": 14.387451171875,
+        "disk_free_gb": 374.2622604370117,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.1875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.15399169974856908,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.773002724166666,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T13:04:29.798624",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 1.3,
+        "memory_usage_percent": 60.1,
+        "memory_available_gb": 14.36517333984375,
+        "disk_free_gb": 374.2622528076172,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.203125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.17094375835524664,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.789954783055556,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T13:05:30.815054",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 7.9,
+        "memory_usage_percent": 60.8,
+        "memory_available_gb": 14.119369506835938,
+        "disk_free_gb": 374.27591705322266,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 495.203125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.1878929274612003,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 167.60897636413574,
+        "max_response_time_ms": 167.60897636413574,
+        "min_response_time_ms": 167.60897636413574,
+        "p95_response_time_ms": 167.60897636413574,
+        "p99_response_time_ms": 167.60897636413574
+      },
+      "data": {
+        "index_age_hours": 16.806903944166667,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T13:45:34.937246",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 4.1,
+        "memory_usage_percent": 63.8,
+        "memory_available_gb": 13.019851684570312,
+        "disk_free_gb": 373.89678955078125,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 493.3125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.0012967389159732395,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.474714418055555,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T13:46:35.951173",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 3.8,
+        "memory_usage_percent": 62.1,
+        "memory_available_gb": 13.651077270507812,
+        "disk_free_gb": 373.8949317932129,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 493.3125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.018244921896192763,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.491662599722222,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:00:36.772796",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 9.5,
+        "memory_usage_percent": 65.8,
+        "memory_available_gb": 12.3082275390625,
+        "disk_free_gb": 373.8459701538086,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 508.375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.0013107777304119533,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.72522408361111,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:00:47.251955",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 14.6,
+        "memory_usage_percent": 62.8,
+        "memory_available_gb": 13.378570556640625,
+        "disk_free_gb": 373.8334617614746,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 508.53125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.0042217738760842215,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.72813510472222,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:00:54.859434",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 16.4,
+        "memory_usage_percent": 65.8,
+        "memory_available_gb": 12.327728271484375,
+        "disk_free_gb": 373.83349227905273,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 523.25
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 1,
+        "latest_backup": "20250729_201706"
+      },
+      "performance": {
+        "uptime_hours": 0.006335092782974243,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.730248408888887,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:01:37.791693",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.0,
+        "memory_usage_percent": 62.5,
+        "memory_available_gb": 13.4962158203125,
+        "disk_free_gb": 373.8299331665039,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 561.9375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.018260694411065842,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.74217401,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:02:38.810834",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 17.0,
+        "memory_usage_percent": 62.1,
+        "memory_available_gb": 13.656112670898438,
+        "disk_free_gb": 373.84770584106445,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 589.625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.035210183925098844,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 156.1295986175537,
+        "max_response_time_ms": 156.1295986175537,
+        "min_response_time_ms": 156.1295986175537,
+        "p95_response_time_ms": 156.1295986175537,
+        "p99_response_time_ms": 156.1295986175537
+      },
+      "data": {
+        "index_age_hours": 17.75912349777778,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:04:16.819810",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.4,
+        "memory_usage_percent": 62.6,
+        "memory_available_gb": 13.472564697265625,
+        "disk_free_gb": 373.8508720397949,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 509.625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.0013227044211493598,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.786348458611112,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:05:17.835736",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.7,
+        "memory_usage_percent": 60.9,
+        "memory_available_gb": 14.076370239257812,
+        "disk_free_gb": 373.8614921569824,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 544.34375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.018271561861038208,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.80329732027778,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:06:18.853687",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.7,
+        "memory_usage_percent": 60.6,
+        "memory_available_gb": 14.199798583984375,
+        "disk_free_gb": 373.85832595825195,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 557.75
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.0352205193705029,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.820246270555554,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:07:19.870262",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.5,
+        "memory_usage_percent": 60.6,
+        "memory_available_gb": 14.177627563476562,
+        "disk_free_gb": 373.8562240600586,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 559.34375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.052169993586010405,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.837195744166667,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:08:20.887713",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.6,
+        "memory_usage_percent": 60.6,
+        "memory_available_gb": 14.192657470703125,
+        "disk_free_gb": 373.85620880126953,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 564.640625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.06911885188685524,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.854144608333335,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:09:21.903053",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.9,
+        "memory_usage_percent": 60.7,
+        "memory_available_gb": 14.149810791015625,
+        "disk_free_gb": 373.85405349731445,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 565.5
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.08606668386194441,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.871092433333335,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:10:22.903923",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 8.0,
+        "memory_usage_percent": 62.3,
+        "memory_available_gb": 13.579498291015625,
+        "disk_free_gb": 373.8541793823242,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 571.34375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.10301245941056146,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.888038209999998,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:11:23.918989",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 11.1,
+        "memory_usage_percent": 61.4,
+        "memory_available_gb": 13.881027221679688,
+        "disk_free_gb": 373.85002517700195,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 577.703125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.11996128022670746,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.904987033333335,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:12:24.931793",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 14.6,
+        "memory_usage_percent": 62.0,
+        "memory_available_gb": 13.680694580078125,
+        "disk_free_gb": 373.8414535522461,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 585.0
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.136908731063207,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.92193448777778,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:13:25.949009",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 16.5,
+        "memory_usage_percent": 62.6,
+        "memory_available_gb": 13.455764770507812,
+        "disk_free_gb": 373.8084259033203,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 598.140625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.15385879304673936,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.93888454888889,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:14:26.967141",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 8.7,
+        "memory_usage_percent": 61.5,
+        "memory_available_gb": 13.848587036132812,
+        "disk_free_gb": 373.8027687072754,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 609.28125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.17080764518843758,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 17.95583340027778,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:29:05.656417",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 14.0,
+        "memory_usage_percent": 64.9,
+        "memory_available_gb": 12.63323974609375,
+        "disk_free_gb": 374.0389709472656,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 510.0625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.001343623333507114,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 18.19991423277778,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:29:06.582706",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 14.0,
+        "memory_usage_percent": 62.7,
+        "memory_available_gb": 13.43267822265625,
+        "disk_free_gb": 374.0389823913574,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 510.0625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.001600760022799174,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 18.20017136972222,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:29:28.154219",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 13.1,
+        "memory_usage_percent": 61.7,
+        "memory_available_gb": 13.78192138671875,
+        "disk_free_gb": 374.0413703918457,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 510.0625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.00759308914343516,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 18.206163710555558,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:29:29.189151",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 7.3,
+        "memory_usage_percent": 62.0,
+        "memory_available_gb": 13.667892456054688,
+        "disk_free_gb": 374.0413703918457,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 510.09375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.007879077792167663,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 18.20644968888889,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:30:06.673810",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.6,
+        "memory_usage_percent": 60.9,
+        "memory_available_gb": 14.065933227539062,
+        "disk_free_gb": 374.0383720397949,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 523.59375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.018292028903961182,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 18.216862638888887,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:31:07.688834",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.6,
+        "memory_usage_percent": 60.9,
+        "memory_available_gb": 14.06793212890625,
+        "disk_free_gb": 374.03107833862305,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 552.546875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.03524167974789937,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 18.233812306944444,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:32:08.711138",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.0,
+        "memory_usage_percent": 63.7,
+        "memory_available_gb": 13.050140380859375,
+        "disk_free_gb": 374.0258369445801,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 552.546875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.05219140138891008,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 18.250762003611108,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:33:09.730065",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.5,
+        "memory_usage_percent": 63.7,
+        "memory_available_gb": 13.079360961914062,
+        "disk_free_gb": 374.02387619018555,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 552.546875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.06914040221108331,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 18.267711008888888,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:34:10.746561",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.6,
+        "memory_usage_percent": 64.2,
+        "memory_available_gb": 12.902313232421875,
+        "disk_free_gb": 374.02275466918945,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 552.546875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03373432159423828,
+        "metadata_size_mb": 0.018546104431152344,
+        "last_modified": "2025-07-29T20:17:06.972818",
+        "metadata_count": 23,
+        "backup_count": 2,
+        "latest_backup": "20250730_140100"
+      },
+      "performance": {
+        "uptime_hours": 0.08608977503246731,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 18.284660377777776,
+        "needs_update": false,
+        "last_update": "2025-07-29T20:17:06.972818"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:35:11.761291",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.4,
+        "memory_usage_percent": 63.6,
+        "memory_available_gb": 13.0860595703125,
+        "disk_free_gb": 374.0201835632324,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 709.71875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 4,
+        "latest_backup": "20250730_143506"
+      },
+      "performance": {
+        "uptime_hours": 0.10303830583890279,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.0017898833333333333,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:36:12.774187",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.2,
+        "memory_usage_percent": 63.8,
+        "memory_available_gb": 13.031219482421875,
+        "disk_free_gb": 374.01616287231445,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 709.71875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 4,
+        "latest_backup": "20250730_143506"
+      },
+      "performance": {
+        "uptime_hours": 0.11998721612824334,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.018738789444444445,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:37:13.793805",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 17.9,
+        "memory_usage_percent": 64.1,
+        "memory_available_gb": 12.9375,
+        "disk_free_gb": 374.0148735046387,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 709.71875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 4,
+        "latest_backup": "20250730_143506"
+      },
+      "performance": {
+        "uptime_hours": 0.13693665113714007,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.03568822583333333,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:38:14.808540",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.1,
+        "memory_usage_percent": 60.3,
+        "memory_available_gb": 14.296035766601562,
+        "disk_free_gb": 374.05225372314453,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 709.71875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 4,
+        "latest_backup": "20250730_143506"
+      },
+      "performance": {
+        "uptime_hours": 0.1538848610719045,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.05263643972222223,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:39:15.825393",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.6,
+        "memory_usage_percent": 61.3,
+        "memory_available_gb": 13.945404052734375,
+        "disk_free_gb": 374.05467987060547,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 709.71875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 4,
+        "latest_backup": "20250730_143506"
+      },
+      "performance": {
+        "uptime_hours": 0.17083462834358215,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.06958621222222222,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:40:16.843411",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.4,
+        "memory_usage_percent": 60.5,
+        "memory_available_gb": 14.215118408203125,
+        "disk_free_gb": 374.05239486694336,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 722.03125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 5,
+        "latest_backup": "20250730_144011"
+      },
+      "performance": {
+        "uptime_hours": 0.18778473834196727,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.08653632583333333,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:41:17.869342",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.4,
+        "memory_usage_percent": 61.7,
+        "memory_available_gb": 13.788177490234375,
+        "disk_free_gb": 374.0595397949219,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 722.03125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 5,
+        "latest_backup": "20250730_144011"
+      },
+      "performance": {
+        "uptime_hours": 0.2047347316477034,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.10348631611111112,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:42:18.884670",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 6.1,
+        "memory_usage_percent": 61.1,
+        "memory_available_gb": 13.988143920898438,
+        "disk_free_gb": 374.0593948364258,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 722.03125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 5,
+        "latest_backup": "20250730_144011"
+      },
+      "performance": {
+        "uptime_hours": 0.22168367558055455,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.12043525277777778,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:43:19.897784",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.9,
+        "memory_usage_percent": 64.2,
+        "memory_available_gb": 12.895751953125,
+        "disk_free_gb": 374.0572280883789,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 721.09375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 5,
+        "latest_backup": "20250730_144011"
+      },
+      "performance": {
+        "uptime_hours": 0.23863312774234346,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.137384725,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:44:20.918939",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.9,
+        "memory_usage_percent": 63.6,
+        "memory_available_gb": 13.106277465820312,
+        "disk_free_gb": 374.0666160583496,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 721.09375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 5,
+        "latest_backup": "20250730_144011"
+      },
+      "performance": {
+        "uptime_hours": 0.2555825361278322,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.15433411472222222,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:45:21.935531",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 11.0,
+        "memory_usage_percent": 63.9,
+        "memory_available_gb": 13.01080322265625,
+        "disk_free_gb": 374.06403732299805,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 724.734375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_144517"
+      },
+      "performance": {
+        "uptime_hours": 0.2725319458378686,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.1712835222222222,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:46:22.954470",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 9.2,
+        "memory_usage_percent": 64.1,
+        "memory_available_gb": 12.936447143554688,
+        "disk_free_gb": 374.05671310424805,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 724.734375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_144517"
+      },
+      "performance": {
+        "uptime_hours": 0.2894814595248964,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.18823303749999998,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:47:23.973310",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 8.6,
+        "memory_usage_percent": 63.8,
+        "memory_available_gb": 13.045028686523438,
+        "disk_free_gb": 374.0555725097656,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 724.734375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_144517"
+      },
+      "performance": {
+        "uptime_hours": 0.3064304397503535,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.2051820172222222,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:48:24.990864",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.7,
+        "memory_usage_percent": 63.6,
+        "memory_available_gb": 13.104095458984375,
+        "disk_free_gb": 374.0569953918457,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 724.734375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_144517"
+      },
+      "performance": {
+        "uptime_hours": 0.32338243974579706,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.22213402444444447,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:49:26.024726",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 8.4,
+        "memory_usage_percent": 63.5,
+        "memory_available_gb": 13.142379760742188,
+        "disk_free_gb": 374.0550422668457,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 724.734375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_144517"
+      },
+      "performance": {
+        "uptime_hours": 0.3403348049852583,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.23908637833333332,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:50:27.044160",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 9.5,
+        "memory_usage_percent": 64.1,
+        "memory_available_gb": 12.9119873046875,
+        "disk_free_gb": 374.06142807006836,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 724.25
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_145023"
+      },
+      "performance": {
+        "uptime_hours": 0.35728358222378626,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.2560351575,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:51:28.058882",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 8.3,
+        "memory_usage_percent": 63.6,
+        "memory_available_gb": 13.109359741210938,
+        "disk_free_gb": 374.0611114501953,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 724.25
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_145023"
+      },
+      "performance": {
+        "uptime_hours": 0.3742321217060089,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.2729837002777778,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:52:29.080112",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.2,
+        "memory_usage_percent": 61.1,
+        "memory_available_gb": 14.0166015625,
+        "disk_free_gb": 374.0560760498047,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 724.25
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_145023"
+      },
+      "performance": {
+        "uptime_hours": 0.3911835069126553,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.289935085,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:53:30.101871",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 4.8,
+        "memory_usage_percent": 60.4,
+        "memory_available_gb": 14.273773193359375,
+        "disk_free_gb": 374.05573654174805,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 724.25
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_145023"
+      },
+      "performance": {
+        "uptime_hours": 0.40813334392176737,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.30688492416666663,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:54:31.127293",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 4.8,
+        "memory_usage_percent": 60.5,
+        "memory_available_gb": 14.206497192382812,
+        "disk_free_gb": 374.0546875,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 724.25
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_145023"
+      },
+      "performance": {
+        "uptime_hours": 0.4250849125120375,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.3238364966666667,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:55:32.141426",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 5.2,
+        "memory_usage_percent": 60.5,
+        "memory_available_gb": 14.2281494140625,
+        "disk_free_gb": 374.0583267211914,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 729.390625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_145528"
+      },
+      "performance": {
+        "uptime_hours": 0.4420337289571762,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.3407853022222222,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:56:33.142678",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.0,
+        "memory_usage_percent": 60.6,
+        "memory_available_gb": 14.183502197265625,
+        "disk_free_gb": 374.0565757751465,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 729.390625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_145528"
+      },
+      "performance": {
+        "uptime_hours": 0.45897794114218815,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.35772952444444445,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:57:34.156006",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.5,
+        "memory_usage_percent": 64.6,
+        "memory_available_gb": 12.761734008789062,
+        "disk_free_gb": 374.05539321899414,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 729.390625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_145528"
+      },
+      "performance": {
+        "uptime_hours": 0.475926365852356,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.37467794861111114,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:58:35.173189",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 17.3,
+        "memory_usage_percent": 66.3,
+        "memory_available_gb": 12.124908447265625,
+        "disk_free_gb": 374.0510902404785,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 729.390625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_145528"
+      },
+      "performance": {
+        "uptime_hours": 0.4928762455781301,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.3916278194444444,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T14:59:36.194700",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.9,
+        "memory_usage_percent": 63.3,
+        "memory_available_gb": 13.216995239257812,
+        "disk_free_gb": 374.0476379394531,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 729.390625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_145528"
+      },
+      "performance": {
+        "uptime_hours": 0.5098258972830243,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.40857747194444444,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T15:00:37.217691",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 15.9,
+        "memory_usage_percent": 64.9,
+        "memory_available_gb": 12.626953125,
+        "disk_free_gb": 374.0462837219238,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 731.0
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_150034"
+      },
+      "performance": {
+        "uptime_hours": 0.5267770355939865,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.4255286097222222,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T15:01:38.236477",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.0,
+        "memory_usage_percent": 60.9,
+        "memory_available_gb": 14.07269287109375,
+        "disk_free_gb": 374.65322494506836,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 694.4375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_150034"
+      },
+      "performance": {
+        "uptime_hours": 0.5437265408701367,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.44247811555555555,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T15:02:39.255332",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.5,
+        "memory_usage_percent": 61.3,
+        "memory_available_gb": 13.920455932617188,
+        "disk_free_gb": 374.6529083251953,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 694.4375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_150034"
+      },
+      "performance": {
+        "uptime_hours": 0.5606751377715005,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.4594267213888889,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T15:03:40.272528",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 14.6,
+        "memory_usage_percent": 64.5,
+        "memory_available_gb": 12.764801025390625,
+        "disk_free_gb": 374.65008544921875,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 694.4375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_150034"
+      },
+      "performance": {
+        "uptime_hours": 0.5776256567239761,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.47637723388888886,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T15:04:41.295223",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.0,
+        "memory_usage_percent": 62.2,
+        "memory_available_gb": 13.619949340820312,
+        "disk_free_gb": 374.6471481323242,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 604.609375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_150034"
+      },
+      "performance": {
+        "uptime_hours": 0.5945765178071128,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.49332809055555554,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T15:05:42.313984",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.1,
+        "memory_usage_percent": 63.8,
+        "memory_available_gb": 13.036300659179688,
+        "disk_free_gb": 374.6419105529785,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 609.703125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_150539"
+      },
+      "performance": {
+        "uptime_hours": 0.6115260625547833,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.5102776422222223,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T15:06:43.331903",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.2,
+        "memory_usage_percent": 63.0,
+        "memory_available_gb": 13.329010009765625,
+        "disk_free_gb": 374.641414642334,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 609.703125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_150539"
+      },
+      "performance": {
+        "uptime_hours": 0.6284748366806242,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.5272264255555555,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-07-30T15:07:44.354606",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 9.8,
+        "memory_usage_percent": 62.4,
+        "memory_available_gb": 13.524917602539062,
+        "disk_free_gb": 374.63939666748047,
+        "disk_usage_percent": 2.7,
+        "process_memory_mb": 609.703125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.06449604034423828,
+        "metadata_size_mb": 0.03548622131347656,
+        "last_modified": "2025-07-30T14:35:06.321318",
+        "metadata_count": 44,
+        "backup_count": 6,
+        "latest_backup": "20250730_150539"
+      },
+      "performance": {
+        "uptime_hours": 0.6454262167215348,
+        "total_requests": 1,
+        "error_count": 0,
+        "error_rate_percent": 0.0,
+        "avg_response_time_ms": 141.3569450378418,
+        "max_response_time_ms": 141.3569450378418,
+        "min_response_time_ms": 141.3569450378418,
+        "p95_response_time_ms": 141.3569450378418,
+        "p99_response_time_ms": 141.3569450378418
+      },
+      "data": {
+        "index_age_hours": 0.5441777958333333,
+        "needs_update": false,
+        "last_update": "2025-07-30T14:35:06.321318"
+      }
+    },
+    "alerts": []
+  }
+]

@@ -1,0 +1,4 @@
+2025-07-29 16:03:53.936 | INFO     | __main__:main:37 - Starting FAISS index build process
+2025-07-29 16:03:53.937 | INFO     | __main__:main:50 - Initializing SFDC client...
+2025-07-29 16:03:53.937 | ERROR    | src.data_extraction.sfdc_client:_connect:33 - Failed to connect to Salesforce: 'SalesforceConfig' object has no attribute 'domain'
+2025-07-29 16:03:53.937 | ERROR    | __main__:main:142 - Error during index build: 'SalesforceConfig' object has no attribute 'domain'

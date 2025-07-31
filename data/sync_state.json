@@ -1,0 +1,14 @@
+{
+  "last_sync_time": "2025-07-30T09:05:06.321690",
+  "last_successful_sync": "2025-07-30T09:05:06.321692",
+  "total_cases_synced": 21,
+  "total_cases_in_index": 44,
+  "sync_history": [
+    {
+      "timestamp": "2025-07-30T09:04:48.898726",
+      "cases_processed": 21,
+      "cases_added": 21,
+      "duration_seconds": 17.422967
+    }
+  ]
+}

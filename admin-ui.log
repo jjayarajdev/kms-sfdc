@@ -1,0 +1,16 @@
+
+> kms-sfdc-admin-ui@1.0.0 dev
+> vite --port 4001
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.19  ready in 74 ms
+
+  ➜  Local:   http://localhost:4001/
+  ➜  Network: use --host to expose
+8:13:13 pm [vite] hmr update /src/pages/SearchTest.jsx
+8:16:12 pm [vite] hmr update /src/pages/SearchTest.jsx
+8:21:42 pm [vite] http proxy error: /search
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7)

@@ -1,0 +1,4 @@
+2025-07-29 16:09:01.623 | INFO     | __main__:main:37 - Starting FAISS index build process
+2025-07-29 16:09:01.624 | INFO     | __main__:main:50 - Initializing SFDC client...
+2025-07-29 16:09:02.946 | ERROR    | src.data_extraction.sfdc_client:_connect:44 - Failed to connect to Salesforce: INVALID_LOGIN: Invalid username, password, security token; or user locked out.
+2025-07-29 16:09:02.946 | ERROR    | __main__:main:142 - Error during index build: INVALID_LOGIN: Invalid username, password, security token; or user locked out.

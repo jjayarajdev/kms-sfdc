@@ -1,0 +1,44 @@
+2025-07-29 15:26:43.630 | INFO     | __main__:main:97 - Starting FAISS index build with mock data
+2025-07-29 15:26:43.630 | INFO     | __main__:generate_mock_case_data:20 - Generating 1000 mock SFDC cases...
+2025-07-29 15:26:43.663 | INFO     | __main__:generate_mock_case_data:83 - Generated 1000 mock cases
+2025-07-29 15:26:43.663 | INFO     | __main__:main:105 - Initializing text processor...
+2025-07-29 15:26:43.663 | INFO     | __main__:main:109 - Processing text data...
+2025-07-29 15:26:43.663 | INFO     | src.utils.text_processor:preprocess_case_data:29 - Preprocessing 1000 case records
+2025-07-29 15:26:43.691 | INFO     | src.utils.text_processor:get_text_stats:186 - Text statistics: {'total_records': 1000, 'avg_text_length': 214.803, 'min_text_length': 190, 'max_text_length': 244, 'median_text_length': 213.0, 'empty_text_count': 0}
+2025-07-29 15:26:43.691 | INFO     | __main__:main:114 - Text processing complete. Stats: {'total_records': 1000, 'avg_text_length': 214.803, 'min_text_length': 190, 'max_text_length': 244, 'median_text_length': 213.0, 'empty_text_count': 0}
+2025-07-29 15:26:43.691 | INFO     | __main__:main:117 - Initializing vector database...
+2025-07-29 15:26:43.691 | INFO     | __main__:main:121 - Building FAISS vector index...
+2025-07-29 15:26:43.691 | INFO     | src.vectorization.vector_db:build_index:79 - Building production-scale FAISS index from 1000 cases
+2025-07-29 15:26:43.692 | INFO     | src.vectorization.vector_db:_load_model:41 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-29 15:26:47.316 | INFO     | src.vectorization.vector_db:_load_model:43 - Model loaded successfully for local execution
+2025-07-29 15:26:47.317 | INFO     | src.vectorization.vector_db:_create_embeddings_large_scale:130 - Creating embeddings for 1000 texts in batches of 5000
+2025-07-29 15:26:49.195 | INFO     | src.vectorization.vector_db:_create_embeddings_large_scale:147 - Embedding progress: 100.0% (1000/1000)
+2025-07-29 15:26:49.196 | INFO     | src.vectorization.vector_db:_create_embeddings_large_scale:160 - Created embeddings with shape: (1000, 384)
+2025-07-29 15:26:49.197 | INFO     | src.vectorization.vector_db:_create_production_index:203 - Created IndexFlatIP for 1000 vectors
+2025-07-29 15:26:49.197 | INFO     | src.vectorization.vector_db:_add_embeddings_batch:217 - Adding 1000 vectors to index in batches of 50000
+2025-07-29 15:26:49.197 | INFO     | src.vectorization.vector_db:_add_embeddings_batch:226 - Indexing progress: 100.0% (1000/1000)
+2025-07-29 15:26:49.197 | INFO     | src.vectorization.vector_db:_store_metadata_batch:235 - Storing case metadata...
+2025-07-29 15:26:49.214 | INFO     | src.vectorization.vector_db:_store_metadata_batch:256 - Stored metadata for 1000/1000 cases
+2025-07-29 15:26:49.214 | INFO     | src.vectorization.vector_db:build_index:109 - Production FAISS index built successfully with 1000 vectors
+2025-07-29 15:26:49.214 | INFO     | src.vectorization.vector_db:_log_index_metrics:276 - Index metrics: {'total_vectors': 1000, 'index_type': 'IndexFlatIP', 'memory_usage_mb': '564.7', 'vectors_per_mb': '1.8'}
+2025-07-29 15:26:49.214 | INFO     | __main__:main:125 - Saving vector index...
+2025-07-29 15:26:49.215 | INFO     | src.vectorization.vector_db:save_index:352 - FAISS index saved to data/faiss_index.bin
+2025-07-29 15:26:49.219 | INFO     | src.vectorization.vector_db:save_index:357 - Metadata saved to data/case_metadata.json
+2025-07-29 15:26:49.219 | INFO     | __main__:main:130 - Index build complete! Final stats: {'is_trained': True, 'total_vectors': 1000, 'dimension': 384, 'index_type': 'IndexIVFPQ', 'model_name': 'sentence-transformers/all-MiniLM-L6-v2', 'metadata_count': 1000}
+2025-07-29 15:26:49.219 | INFO     | __main__:main:133 - Testing search functionality...
+2025-07-29 15:26:49.219 | INFO     | src.vectorization.vector_db:create_embeddings:57 - Creating embeddings for 1 texts
+2025-07-29 15:26:50.123 | INFO     | src.vectorization.vector_db:create_embeddings:66 - Created embeddings with shape: (1, 384)
+2025-07-29 15:26:50.124 | INFO     | src.vectorization.vector_db:search:327 - Found 0 similar cases above threshold 0.7
+2025-07-29 15:26:50.124 | INFO     | __main__:main:142 - Query 'login authentication issues' returned 0 results
+2025-07-29 15:26:50.124 | INFO     | src.vectorization.vector_db:create_embeddings:57 - Creating embeddings for 1 texts
+2025-07-29 15:26:50.434 | INFO     | src.vectorization.vector_db:create_embeddings:66 - Created embeddings with shape: (1, 384)
+2025-07-29 15:26:50.435 | INFO     | src.vectorization.vector_db:search:327 - Found 3 similar cases above threshold 0.7
+2025-07-29 15:26:50.435 | INFO     | __main__:main:142 - Query 'password reset problems' returned 3 results
+2025-07-29 15:26:50.435 | INFO     | __main__:main:144 -   Top result: Password reset not working (score: 0.731)
+2025-07-29 15:26:50.435 | INFO     | src.vectorization.vector_db:create_embeddings:57 - Creating embeddings for 1 texts
+2025-07-29 15:26:50.442 | INFO     | src.vectorization.vector_db:create_embeddings:66 - Created embeddings with shape: (1, 384)
+2025-07-29 15:26:50.442 | INFO     | src.vectorization.vector_db:search:327 - Found 0 similar cases above threshold 0.7
+2025-07-29 15:26:50.442 | INFO     | __main__:main:142 - Query 'system performance slow' returned 0 results
+2025-07-29 15:26:50.442 | INFO     | __main__:main:146 - Mock data index build completed successfully!
+2025-07-29 15:26:50.442 | INFO     | __main__:main:147 - 
+You can now test the API with: make run-api
