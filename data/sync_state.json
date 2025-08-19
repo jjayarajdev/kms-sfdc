@@ -1,14 +1,32 @@
 {
-  "last_sync_time": "2025-07-30T09:05:06.321690",
-  "last_successful_sync": "2025-07-30T09:05:06.321692",
-  "total_cases_synced": 21,
-  "total_cases_in_index": 44,
+  "last_sync_time": "2025-08-19T06:18:30.756946",
+  "last_successful_sync": "2025-08-19T06:18:30.756946",
+  "total_cases_synced": 58,
+  "total_cases_in_index": 24,
   "sync_history": [
     {
       "timestamp": "2025-07-30T09:04:48.898726",
       "cases_processed": 21,
       "cases_added": 21,
       "duration_seconds": 17.422967
+    },
+    {
+      "timestamp": "2025-08-13T06:12:44.206758",
+      "cases_processed": 23,
+      "cases_added": 23,
+      "duration_seconds": 30.76698
+    },
+    {
+      "timestamp": "2025-08-14T06:06:40.084631",
+      "cases_processed": 2,
+      "cases_added": 2,
+      "duration_seconds": 32.497748
+    },
+    {
+      "timestamp": "2025-08-19T06:18:18.677668",
+      "cases_processed": 12,
+      "cases_added": 12,
+      "duration_seconds": 12.079278
     }
   ]
 }

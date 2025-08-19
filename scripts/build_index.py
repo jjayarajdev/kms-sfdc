@@ -61,47 +61,29 @@ def main():
         logger.info("Initializing vector database...")
         vector_db = VectorDatabase()
         
-        # Extract case data
-        logger.info("Extracting case data from Salesforce...")
+        # Extract case data (include ContentDocument file contents)
+        logger.info("Extracting case data (including ContentDocument files) from Salesforce...")
+        case_data = sfdc_client.get_case_data_with_content_documents(start_date, end_date)
         
-        if args.batch_size and args.batch_size < 10000:
-            # Use batch processing for large datasets
-            all_data = []
-            batch_count = 0
-            
-            for batch_df in sfdc_client.get_case_data_batch(start_date, end_date):
-                batch_count += 1
-                logger.info(f"Processing batch {batch_count} with {len(batch_df)} records")
-                
-                # Process batch
-                processed_batch = text_processor.preprocess_case_data(batch_df)
-                all_data.append(processed_batch)
-                
-                # Stop if max records reached
-                if args.max_records and sum(len(df) for df in all_data) >= args.max_records:
-                    logger.info(f"Reached maximum records limit: {args.max_records}")
-                    break
-            
-            # Combine all batches
-            if all_data:
-                case_data = pd.concat(all_data, ignore_index=True)
-            else:
-                logger.error("No data extracted")
-                return 1
-                
-        else:
-            # Extract all data at once
-            case_data = sfdc_client.get_case_data(start_date, end_date)
-            
-            if args.max_records and len(case_data) > args.max_records:
-                case_data = case_data.head(args.max_records)
-                logger.info(f"Limited data to {args.max_records} records")
+        if args.max_records and len(case_data) > args.max_records:
+            case_data = case_data.head(args.max_records)
+            logger.info(f"Limited data to {args.max_records} records")
+        
+        # Ensure chronological order by CreatedDate
+        if 'CreatedDate' in case_data.columns:
+            case_data = case_data.sort_values('CreatedDate', ascending=True).reset_index(drop=True)
+            logger.info("Sorted cases by CreatedDate ascending")
         
         logger.info(f"Extracted {len(case_data)} case records")
         
-        # Process text data
+        # Process text data (keep ALL records: no duplicates/quality filter/min length)
         logger.info("Processing text data...")
-        processed_data = text_processor.preprocess_case_data(case_data)
+        processed_data = text_processor.preprocess_case_data(
+            case_data,
+            detect_duplicates=False,
+            apply_quality_filters=False,
+            enforce_min_length=False
+        )
         
         # Get text statistics
         stats = text_processor.get_text_stats(processed_data)
@@ -130,10 +112,12 @@ def main():
         db_stats = vector_db.get_stats()
         logger.info(f"Index build complete! Final stats: {db_stats}")
         
-        # Test search functionality
-        logger.info("Testing search functionality...")
-        test_results = vector_db.search("unexpected reboots", top_k=5)
-        logger.info(f"Test search returned {len(test_results)} results")
+        # Optional: quick sanity search
+        try:
+            test_results = vector_db.search("attachment", top_k=5)
+            logger.info(f"Test search returned {len(test_results)} results")
+        except Exception:
+            pass
         
         logger.info("FAISS index build process completed successfully!")
         return 0

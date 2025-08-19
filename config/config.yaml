@@ -67,6 +67,8 @@ text_processing:
     - "Resolution_Plain_Text"
     - "Status_Text"
     - "TextBody"
+    - "Description_Summary"
+    - "Comment_Body_Text"
   
   preprocessing:
     remove_html: true

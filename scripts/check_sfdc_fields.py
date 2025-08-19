@@ -1,89 +1,88 @@
 #!/usr/bin/env python3
-"""Check available fields in Salesforce Case object."""
+"""
+Check Salesforce fields utility.
+This script checks what fields are available in Salesforce objects.
+"""
 
 import sys
-from pathlib import Path
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-# Add src to path
-sys.path.append(str(Path(__file__).parent.parent))
+from data_extraction.sfdc_client import SFDCClient
+from utils.config import Config
 
-from src.data_extraction.sfdc_client import SFDCClient
-from loguru import logger
-import json
-
-def main():
-    """Check available Case fields in Salesforce."""
+def check_sfdc_fields():
+    """Check available fields in Salesforce objects."""
     try:
-        logger.info("Connecting to Salesforce to check Case fields...")
+        # Initialize configuration and client
+        config = Config()
+        sfdc_client = SFDCClient(config)
         
-        # Initialize SFDC client
-        sfdc_client = SFDCClient()
+        print("Checking Salesforce fields...")
         
-        # Get Case field information
-        logger.info("Retrieving Case object field metadata...")
-        fields_info = sfdc_client.get_case_fields_info()
-        
-        # Filter and display relevant text fields
-        text_fields = []
-        for field_name, field_info in fields_info.items():
-            if field_info['type'] in ['string', 'textarea', 'picklist']:
-                text_fields.append({
-                    'name': field_name,
-                    'label': field_info['label'],
-                    'type': field_info['type'],
-                    'custom': field_info['custom']
-                })
-        
-        # Sort by name
-        text_fields.sort(key=lambda x: x['name'])
-        
-        print("\n=== Available Text Fields in Case Object ===")
-        print(f"{'Field Name':<30} {'Label':<40} {'Type':<15} {'Custom'}")
-        print("-" * 95)
-        
-        for field in text_fields:
-            print(f"{field['name']:<30} {field['label']:<40} {field['type']:<15} {field['custom']}")
-        
-        # Show suggested fields for vectorization
-        suggested_fields = []
-        for field in text_fields:
-            name_lower = field['name'].lower()
-            if any(keyword in name_lower for keyword in ['subject', 'description', 'comment', 'resolution', 'issue', 'cause', 'text', 'body']):
-                suggested_fields.append(field['name'])
-        
-        print(f"\n=== Suggested Fields for Vectorization ===")
-        for field in suggested_fields:
-            print(f"  - \"{field}\"")
-        
-        # Create a simple test query
-        print(f"\n=== Testing Sample Query ===")
-        query_fields = ['Id', 'Subject', 'Description', 'Status']
-        available_query_fields = [f for f in query_fields if f in fields_info]
-        
-        if available_query_fields:
-            test_query = f"SELECT {', '.join(available_query_fields)} FROM Case LIMIT 1"
-            print(f"Test query: {test_query}")
+        # Check Case object fields
+        print("\n1. Case object fields:")
+        try:
+            case_fields = sfdc_client.sf.Case.describe()
+            field_names = [field['name'] for field in case_fields['fields']]
+            print(f"Found {len(field_names)} fields in Case object")
             
-            try:
-                result = sfdc_client.sf.query(test_query)
-                print(f"Query successful! Found {result['totalSize']} records.")
-                if result['records']:
-                    print("Sample record:")
-                    record = result['records'][0]
-                    for field in available_query_fields:
-                        value = record.get(field, 'N/A')
-                        if isinstance(value, str) and len(value) > 50:
-                            value = value[:50] + "..."
-                        print(f"  {field}: {value}")
-            except Exception as e:
-                print(f"Test query failed: {e}")
+            # Show all fields
+            for field in field_names:
+                print(f"  - {field}")
+                
+        except Exception as e:
+            print(f"Error describing Case object: {e}")
         
-        logger.info("Field analysis complete!")
-        return 0
+        # Check Attachment object fields
+        print("\n2. Attachment object fields:")
+        try:
+            attachment_fields = sfdc_client.sf.Attachment.describe()
+            att_field_names = [field['name'] for field in attachment_fields['fields']]
+            print(f"Found {len(att_field_names)} fields in Attachment object")
+            
+            # Show all fields
+            for field in att_field_names:
+                print(f"  - {field}")
+                
+        except Exception as e:
+            print(f"Error describing Attachment object: {e}")
+        
+        # Check ContentDocument object fields
+        print("\n3. ContentDocument object fields:")
+        try:
+            content_doc_fields = sfdc_client.sf.ContentDocument.describe()
+            cd_field_names = [field['name'] for field in content_doc_fields['fields']]
+            print(f"Found {len(cd_field_names)} fields in ContentDocument object")
+            
+            # Show all fields
+            for field in cd_field_names:
+                print(f"  - {field}")
+                
+        except Exception as e:
+            print(f"Error describing ContentDocument object: {e}")
+        
+        # Check ContentVersion object fields
+        print("\n4. ContentVersion object fields:")
+        try:
+            content_ver_fields = sfdc_client.sf.ContentVersion.describe()
+            cv_field_names = [field['name'] for field in content_ver_fields['fields']]
+            print(f"Found {len(cv_field_names)} fields in ContentVersion object")
+            
+            # Show all fields
+            for field in cv_field_names:
+                print(f"  - {field}")
+                
+        except Exception as e:
+            print(f"Error describing ContentVersion object: {e}")
+        
+        print("\nField check complete!")
         
     except Exception as e:
-        logger.error(f"Error checking SFDC fields: {e}")
-        return 1
+        print(f"Error during field check: {e}")
+        import traceback
+        traceback.print_exc()
 
 if __name__ == "__main__":
-    sys.exit(main())
+    check_sfdc_fields()
+

@@ -14,6 +14,10 @@ nltk==3.8.1
 spacy==3.6.1
 textblob==0.17.1
 
+# Document processing
+pypdf==3.17.1
+python-docx==0.8.11
+
 # Configuration and logging
 pyyaml==6.0.1
 python-dotenv==1.0.0

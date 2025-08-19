@@ -9,10 +9,16 @@ src/kms_sfdc_vector_db.egg-info/SOURCES.txt
 src/kms_sfdc_vector_db.egg-info/dependency_links.txt
 src/kms_sfdc_vector_db.egg-info/requires.txt
 src/kms_sfdc_vector_db.egg-info/top_level.txt
+src/scheduler/__init__.py
+src/scheduler/scheduler_service.py
+src/scheduler/sync_job.py
 src/search/__init__.py
 src/search/api.py
 src/utils/__init__.py
+src/utils/backup_manager.py
 src/utils/config.py
+src/utils/health_monitor.py
+src/utils/performance_metrics.py
 src/utils/text_processor.py
 src/vectorization/__init__.py
 src/vectorization/vector_db.py

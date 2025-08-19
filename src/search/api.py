@@ -28,13 +28,15 @@ class CaseResult(BaseModel):
     case_number: str
     subject_description: str
     description_description: str
-    issue_plain_text: str
-    cause_plain_text: str
-    resolution_plain_text: str
+    issue_plain_text: Optional[str]
+    cause_plain_text: Optional[str]
+    resolution_plain_text: Optional[str]
     status_text: str
-    textbody: str
+    textbody: Optional[str]
     created_date: str
     preview_text: str
+    comment_body_text: Optional[str]
+    description_summary: Optional[str]
 
 
 class SearchResponse(BaseModel):

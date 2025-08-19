@@ -1,5 +1,6 @@
 __init__
 data_extraction
+scheduler
 search
 utils
 vectorization

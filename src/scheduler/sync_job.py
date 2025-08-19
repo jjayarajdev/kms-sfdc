@@ -148,34 +148,31 @@ class SFDCDataSyncJob:
                 sync_result["backup_id"] = backup_id
             
             # Extract new/updated cases
-            logger.info("Extracting cases from Salesforce")
-            all_cases = []
-            
-            for batch_df in self.sfdc_client.extract_case_data_batched(
+            logger.info("Extracting cases (with ContentDocument files) from Salesforce")
+            case_data = self.sfdc_client.get_case_data_with_content_documents(
                 start_date=start_date,
-                end_date=end_date,
-                batch_size=getattr(config.salesforce, 'query_batch_size', 2000)
-            ):
-                all_cases.append(batch_df)
-                sync_result["cases_extracted"] += len(batch_df)
-                
-                # Log progress
-                if sync_result["cases_extracted"] % 1000 == 0:
-                    logger.info(f"Extracted {sync_result['cases_extracted']} cases so far")
+                end_date=end_date
+            )
+            sync_result["cases_extracted"] = len(case_data)
             
-            if not all_cases:
+            if case_data.empty:
                 logger.info("No new cases to sync")
                 sync_result["status"] = "completed"
                 sync_result["message"] = "No new cases found"
                 return sync_result
             
-            # Combine all batches
-            case_data = pd.concat(all_cases, ignore_index=True)
+            # Ensure chronological order
+            if 'CreatedDate' in case_data.columns:
+                case_data = case_data.sort_values('CreatedDate', ascending=True).reset_index(drop=True)
             logger.info(f"Total cases extracted: {len(case_data)}")
             
             # Process text data
             logger.info("Processing case text data")
-            processed_data = self.text_processor.preprocess_case_data(case_data)
+            processed_data = self.text_processor.preprocess_case_data(
+                case_data,
+                detect_duplicates=False,
+                apply_quality_filters=False
+            )
             sync_result["cases_processed"] = len(processed_data)
             
             # Get text statistics

@@ -19,7 +19,9 @@ class TextProcessor:
         self.preprocessing_config = self.config.preprocessing
     
     def preprocess_case_data(self, df: pd.DataFrame, detect_duplicates: bool = True, 
-                            validate_data: bool = True) -> pd.DataFrame:
+                            validate_data: bool = True,
+                            apply_quality_filters: bool = True,
+                            enforce_min_length: bool = True) -> pd.DataFrame:
         """
         Preprocess case data DataFrame for vectorization with quality control.
         
@@ -27,6 +29,7 @@ class TextProcessor:
             df: DataFrame containing case data
             detect_duplicates: Whether to detect and handle duplicate cases
             validate_data: Whether to perform comprehensive data validation
+            apply_quality_filters: Whether to apply quality-based filtering
             
         Returns:
             DataFrame with processed text fields and combined text column
@@ -48,7 +51,9 @@ class TextProcessor:
             "Cause_Plain_Text": "Cause_Plain_Text__c", 
             "Resolution_Plain_Text": "Resolution_Plain_Text__c",
             "Status_Text": "Status_Text__c",
-            "TextBody": "TextBody__c"
+            "TextBody": "TextBody__c",
+            "Description_Summary": "Description_Summary__c",
+            "Comment_Body_Text": "Comment_Body_Text__c"
         }
         
         # Process each text field
@@ -67,18 +72,20 @@ class TextProcessor:
         # Combine all text fields into single field for vectorization
         processed_df['combined_text'] = self._combine_text_fields(processed_df)
         
-        # Filter out records with insufficient text
+        # Optionally filter out records with insufficient text
         initial_count = len(processed_df)
-        processed_df = processed_df[
-            processed_df['combined_text'].str.len() >= self.config.min_text_length
-        ]
+        if enforce_min_length:
+            processed_df = processed_df[
+                processed_df['combined_text'].str.len() >= self.config.min_text_length
+            ]
         
         # Detect and handle duplicates
         if detect_duplicates:
             processed_df = self._detect_and_handle_duplicates(processed_df)
         
-        # Apply quality filters
-        processed_df = self._apply_quality_filters(processed_df)
+        # Apply quality filters (optional)
+        if apply_quality_filters:
+            processed_df = self._apply_quality_filters(processed_df)
         
         final_count = len(processed_df)
         
@@ -147,7 +154,9 @@ class TextProcessor:
             "Cause_Plain_Text": "Cause_Plain_Text__c", 
             "Resolution_Plain_Text": "Resolution_Plain_Text__c",
             "Status_Text": "Status_Text__c",
-            "TextBody": "TextBody__c"
+            "TextBody": "TextBody__c",
+            "Description_Summary": "Description_Summary__c",
+            "Comment_Body_Text": "Comment_Body_Text__c"
         }
         
         combined_texts = []

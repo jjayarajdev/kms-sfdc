@@ -1,0 +1,11 @@
+{
+  "id": "20250814_125659",
+  "timestamp": "2025-08-14T12:56:59.446624",
+  "description": "Pre-save backup",
+  "index_size": 3117,
+  "metadata_size": 12529,
+  "files": {
+    "index": "data\\backups\\20250814_125659\\faiss_index.bin",
+    "metadata": "data\\backups\\20250814_125659\\case_metadata.json"
+  }
+}

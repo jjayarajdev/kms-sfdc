@@ -1,57 +1,57 @@
 {
-  "20250730_144517": {
-    "id": "20250730_144517",
-    "timestamp": "2025-07-30T14:45:17.581939",
-    "description": "Pre-sync backup - 2025-07-30T09:15:11.817806",
-    "index_size": 67629,
-    "metadata_size": 37210,
+  "20250819_120903": {
+    "id": "20250819_120903",
+    "timestamp": "2025-08-19T12:09:03.918979",
+    "description": "Pre-sync backup - 2025-08-19T06:38:56.002857",
+    "index_size": 36909,
+    "metadata_size": 220008,
     "files": {
-      "index": "data/backups/20250730_144517/faiss_index.bin",
-      "metadata": "data/backups/20250730_144517/case_metadata.json"
+      "index": "data\\backups\\20250819_120903\\faiss_index.bin",
+      "metadata": "data\\backups\\20250819_120903\\case_metadata.json"
     }
   },
-  "20250730_145023": {
-    "id": "20250730_145023",
-    "timestamp": "2025-07-30T14:50:23.168957",
-    "description": "Pre-sync backup - 2025-07-30T09:20:18.238785",
-    "index_size": 67629,
-    "metadata_size": 37210,
+  "20250819_121412": {
+    "id": "20250819_121412",
+    "timestamp": "2025-08-19T12:14:12.622692",
+    "description": "Pre-sync backup - 2025-08-19T06:44:04.541318",
+    "index_size": 36909,
+    "metadata_size": 220008,
     "files": {
-      "index": "data/backups/20250730_145023/faiss_index.bin",
-      "metadata": "data/backups/20250730_145023/case_metadata.json"
+      "index": "data\\backups\\20250819_121412\\faiss_index.bin",
+      "metadata": "data\\backups\\20250819_121412\\case_metadata.json"
     }
   },
-  "20250730_145528": {
-    "id": "20250730_145528",
-    "timestamp": "2025-07-30T14:55:28.931746",
-    "description": "Pre-sync backup - 2025-07-30T09:25:23.509783",
-    "index_size": 67629,
-    "metadata_size": 37210,
+  "20250819_121940": {
+    "id": "20250819_121940",
+    "timestamp": "2025-08-19T12:19:40.757560",
+    "description": "Pre-sync backup - 2025-08-19T06:49:33.891332",
+    "index_size": 36909,
+    "metadata_size": 220008,
     "files": {
-      "index": "data/backups/20250730_145528/faiss_index.bin",
-      "metadata": "data/backups/20250730_145528/case_metadata.json"
+      "index": "data\\backups\\20250819_121940\\faiss_index.bin",
+      "metadata": "data\\backups\\20250819_121940\\case_metadata.json"
     }
   },
-  "20250730_150034": {
-    "id": "20250730_150034",
-    "timestamp": "2025-07-30T15:00:34.524130",
-    "description": "Pre-sync backup - 2025-07-30T09:30:29.396900",
-    "index_size": 67629,
-    "metadata_size": 37210,
+  "20250819_122448": {
+    "id": "20250819_122448",
+    "timestamp": "2025-08-19T12:24:48.880268",
+    "description": "Pre-sync backup - 2025-08-19T06:54:41.304255",
+    "index_size": 36909,
+    "metadata_size": 220008,
     "files": {
-      "index": "data/backups/20250730_150034/faiss_index.bin",
-      "metadata": "data/backups/20250730_150034/case_metadata.json"
+      "index": "data\\backups\\20250819_122448\\faiss_index.bin",
+      "metadata": "data\\backups\\20250819_122448\\case_metadata.json"
     }
   },
-  "20250730_150539": {
-    "id": "20250730_150539",
-    "timestamp": "2025-07-30T15:05:39.892110",
-    "description": "Pre-sync backup - 2025-07-30T09:35:34.879112",
-    "index_size": 67629,
-    "metadata_size": 37210,
+  "20250819_122958": {
+    "id": "20250819_122958",
+    "timestamp": "2025-08-19T12:29:58.199529",
+    "description": "Pre-sync backup - 2025-08-19T06:59:49.495538",
+    "index_size": 36909,
+    "metadata_size": 220008,
     "files": {
-      "index": "data/backups/20250730_150539/faiss_index.bin",
-      "metadata": "data/backups/20250730_150539/case_metadata.json"
+      "index": "data\\backups\\20250819_122958\\faiss_index.bin",
+      "metadata": "data\\backups\\20250819_122958\\case_metadata.json"
     }
   }
 }

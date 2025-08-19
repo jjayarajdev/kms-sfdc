@@ -55,8 +55,18 @@ class TextProcessingConfig(BaseModel):
     min_text_length: int = 10
     max_text_length: int = 10000
     fields_to_vectorize: list[str] = Field(
-        default=["Subject", "Description", "Resolution__c", "Case_Notes__c"]
-    )
+          default=[
+            "Case_Number",
+            "Subject_Description",
+            "Description_Description",
+            "Issue_Plain_Text",
+            "Cause_Plain_Text",
+            "Resolution_Plain_Text",
+            "Status_Text",
+            "TextBody",
+            "Description_Summary",
+            "Comment_Body_Text"
+        ])
     preprocessing: Dict[str, bool] = Field(
         default={
             "remove_html": True,

@@ -293,15 +293,17 @@ class VectorDatabase:
             for idx, (_, row) in enumerate(chunk.iterrows(), start=start_idx):
                 self.case_metadata[idx] = {
                     'case_id': row.get('Id', ''),
-                    'case_number': row.get('Case_Number', ''),
-                    'subject_description': row.get('Subject_Description', ''),
-                    'description_description': row.get('Description_Description', ''),
-                    'issue_plain_text': row.get('Issue_Plain_Text', ''),
-                    'cause_plain_text': row.get('Cause_Plain_Text', ''),
-                    'resolution_plain_text': row.get('Resolution_Plain_Text', ''),
-                    'status_text': row.get('Status_Text', ''),
-                    'textbody': row.get('TextBody', ''),
+                    'case_number': row.get('Case_Number__c', ''),
+                    'subject_description': row.get('Subject_Description__c', ''),
+                    'description_description': row.get('Description_Description__c', ''),
+                    'issue_plain_text': row.get('Issue_Plain_Text__c', ''),
+                    'cause_plain_text': row.get('Cause_Plain_Text__c', ''),
+                    'resolution_plain_text': row.get('Resolution_Plain_Text__c', ''),
+                    'status_text': row.get('Status_Text__c', ''),
+                    'textbody': row.get('TextBody__c', ''),
                     'created_date': str(row.get('CreatedDate', '')),
+                    'description_summary': str(row.get('Description_Summary__c', '')),
+                    'comment_body_text': str(row.get('Comment_Body_Text__c', '')),
                     'combined_text': row.get('combined_text', '')[:500]  # Truncate for storage
                 }
             
@@ -378,7 +380,10 @@ class VectorDatabase:
                     'status_text': case_info.get('status_text', ''),
                     'textbody': case_info.get('textbody', ''),
                     'created_date': case_info.get('created_date', ''),
+                    'description_summary': case_info.get('description_summary', ''),
+                    'comment_body_text': case_info.get('comment_body_text', ''),
                     'preview_text': case_info.get('combined_text', '')
+
                 })
         
         logger.info(f"Found {len(results)} similar cases above threshold {similarity_threshold}")
@@ -542,6 +547,8 @@ class VectorDatabase:
                     'status_text': row.get('Status_Text', ''),
                     'textbody': row.get('TextBody', ''),
                     'created_date': str(row.get('CreatedDate', '')),
+                    'description_summary': str(row.get('Description_Summary', '')),
+                    'comment_body_text': str(row.get('Comment_Body_Text', '')),
                     'combined_text': row.get('combined_text', '')[:500]
                 }
             

@@ -9,8 +9,9 @@ This project builds and maintains a vector database from HPE SFDC case data to e
 ## 🚀 Key Features
 
 ### Core Functionality
-- **SFDC Data Extraction**: Automated batch extraction with incremental updates
-- **Text Processing**: Advanced preprocessing with configurable field selection
+- **SFDC Data Extraction**: Automated batch extraction with incremental updates and **attachment content extraction** (PDF, DOCX, TXT)
+- **Text Processing**: Advanced preprocessing with configurable field selection and **attachment text integration**
+- **Extracted Attachment Data**: The text extracted by the text extractor is stored in the description_summary column       within the metadata
 - **Local Vector Embedding**: Nomic embed-text-v1.5 running entirely locally (no API calls)
 - **FAISS Integration**: High-performance similarity search with multiple index types
 - **REST API**: Comprehensive FastAPI-based service with full OpenAPI documentation
@@ -54,6 +55,9 @@ make setup-env
 # Configure Salesforce credentials
 cp .env.example .env
 # Edit .env with your SFDC credentials
+
+# Install attachment processing dependencies
+pip install pypdf python-docx
 ```
 
 ### 2. Install Dependencies (UV automatically handles this)
@@ -77,11 +81,14 @@ make test-embeddings
 ### 4. Build Initial Index
 
 ```bash
-# Build from all available data (last 2 years)
+# Build from all available data (last 2 years) with attachments
 make build-index
 
 # Or build from sample data for testing
 make build-index-sample
+```
+
+**Note**: The system now automatically extracts and indexes content from Salesforce attachments (PDF, DOCX, TXT) and integrates it with case metadata for enhanced search capabilities.
 ```
 
 ### 5. Start Services
