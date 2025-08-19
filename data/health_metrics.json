@@ -21258,5 +21258,364 @@
         "value": 81.0
       }
     ]
+  },
+  {
+    "timestamp": "2025-08-19T12:43:31.189245",
+    "status": "warning",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 10.7,
+        "memory_usage_percent": 81.6,
+        "memory_available_gb": 2.8907127380371094,
+        "disk_free_gb": 318.33455657958984,
+        "disk_usage_percent": 33.1,
+        "process_memory_mb": 285.90234375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03519916534423828,
+        "metadata_size_mb": 0.20981597900390625,
+        "last_modified": "2025-08-19T11:48:30.749801",
+        "metadata_count": 24,
+        "backup_count": 15,
+        "latest_backup": "20250819_124015"
+      },
+      "performance": {
+        "uptime_hours": 1.0052404531505372,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 0.9170684991666667,
+        "needs_update": false,
+        "last_update": "2025-08-19T11:48:30.749801"
+      }
+    },
+    "alerts": [
+      {
+        "type": "memory_high",
+        "severity": "warning",
+        "message": "Memory usage high: 81.6%",
+        "value": 81.6
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-08-19T12:44:32.333613",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 17.3,
+        "memory_usage_percent": 79.9,
+        "memory_available_gb": 3.1482925415039062,
+        "disk_free_gb": 318.33460235595703,
+        "disk_usage_percent": 33.1,
+        "process_memory_mb": 285.91015625
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03519916534423828,
+        "metadata_size_mb": 0.20981597900390625,
+        "last_modified": "2025-08-19T11:48:30.749801",
+        "metadata_count": 24,
+        "backup_count": 15,
+        "latest_backup": "20250819_124015"
+      },
+      "performance": {
+        "uptime_hours": 1.0222248066796198,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 0.9340528524999999,
+        "needs_update": false,
+        "last_update": "2025-08-19T11:48:30.749801"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-08-19T12:45:33.470421",
+    "status": "warning",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 9.0,
+        "memory_usage_percent": 81.4,
+        "memory_available_gb": 2.9223060607910156,
+        "disk_free_gb": 318.3345260620117,
+        "disk_usage_percent": 33.1,
+        "process_memory_mb": 291.21484375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03519916534423828,
+        "metadata_size_mb": 0.20981597900390625,
+        "last_modified": "2025-08-19T11:48:30.749801",
+        "metadata_count": 24,
+        "backup_count": 15,
+        "latest_backup": "20250819_124524"
+      },
+      "performance": {
+        "uptime_hours": 1.0392057578431235,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 0.9510338036111111,
+        "needs_update": false,
+        "last_update": "2025-08-19T11:48:30.749801"
+      }
+    },
+    "alerts": [
+      {
+        "type": "memory_high",
+        "severity": "warning",
+        "message": "Memory usage high: 81.4%",
+        "value": 81.4
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-08-19T12:46:34.609633",
+    "status": "warning",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 11.9,
+        "memory_usage_percent": 82.2,
+        "memory_available_gb": 2.791839599609375,
+        "disk_free_gb": 318.3367805480957,
+        "disk_usage_percent": 33.1,
+        "process_memory_mb": 291.21875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03519916534423828,
+        "metadata_size_mb": 0.20981597900390625,
+        "last_modified": "2025-08-19T11:48:30.749801",
+        "metadata_count": 24,
+        "backup_count": 15,
+        "latest_backup": "20250819_124524"
+      },
+      "performance": {
+        "uptime_hours": 1.0561902409129673,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 0.9680182866666667,
+        "needs_update": false,
+        "last_update": "2025-08-19T11:48:30.749801"
+      }
+    },
+    "alerts": [
+      {
+        "type": "memory_high",
+        "severity": "warning",
+        "message": "Memory usage high: 82.2%",
+        "value": 82.2
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-08-19T12:47:35.700850",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 11.1,
+        "memory_usage_percent": 78.9,
+        "memory_available_gb": 3.3121986389160156,
+        "disk_free_gb": 318.3363723754883,
+        "disk_usage_percent": 33.1,
+        "process_memory_mb": 271.21484375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03519916534423828,
+        "metadata_size_mb": 0.20981597900390625,
+        "last_modified": "2025-08-19T11:48:30.749801",
+        "metadata_count": 24,
+        "backup_count": 15,
+        "latest_backup": "20250819_124524"
+      },
+      "performance": {
+        "uptime_hours": 1.0731590140528149,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 0.9849870599999999,
+        "needs_update": false,
+        "last_update": "2025-08-19T11:48:30.749801"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-08-19T12:48:36.863991",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 19.6,
+        "memory_usage_percent": 77.4,
+        "memory_available_gb": 3.5452842712402344,
+        "disk_free_gb": 318.33631896972656,
+        "disk_usage_percent": 33.1,
+        "process_memory_mb": 271.21484375
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03519916534423828,
+        "metadata_size_mb": 0.20981597900390625,
+        "last_modified": "2025-08-19T11:48:30.749801",
+        "metadata_count": 24,
+        "backup_count": 15,
+        "latest_backup": "20250819_124524"
+      },
+      "performance": {
+        "uptime_hours": 1.0901506828599505,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.0019787288888888,
+        "needs_update": false,
+        "last_update": "2025-08-19T11:48:30.749801"
+      }
+    },
+    "alerts": []
+  },
+  {
+    "timestamp": "2025-08-19T12:49:38.009823",
+    "status": "warning",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 18.8,
+        "memory_usage_percent": 80.8,
+        "memory_available_gb": 3.0049667358398438,
+        "disk_free_gb": 318.3371696472168,
+        "disk_usage_percent": 33.1,
+        "process_memory_mb": 271.21875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03519916534423828,
+        "metadata_size_mb": 0.20981597900390625,
+        "last_modified": "2025-08-19T11:48:30.749801",
+        "metadata_count": 24,
+        "backup_count": 15,
+        "latest_backup": "20250819_124524"
+      },
+      "performance": {
+        "uptime_hours": 1.1071348820792304,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.0189630674999999,
+        "needs_update": false,
+        "last_update": "2025-08-19T11:48:30.749801"
+      }
+    },
+    "alerts": [
+      {
+        "type": "memory_high",
+        "severity": "warning",
+        "message": "Memory usage high: 80.8%",
+        "value": 80.8
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-08-19T12:50:39.082977",
+    "status": "warning",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 33.9,
+        "memory_usage_percent": 80.1,
+        "memory_available_gb": 3.1169509887695312,
+        "disk_free_gb": 318.33727264404297,
+        "disk_usage_percent": 33.1,
+        "process_memory_mb": 277.23046875
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03519916534423828,
+        "metadata_size_mb": 0.20981597900390625,
+        "last_modified": "2025-08-19T11:48:30.749801",
+        "metadata_count": 24,
+        "backup_count": 15,
+        "latest_backup": "20250819_125032"
+      },
+      "performance": {
+        "uptime_hours": 1.1241072526905271,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.0359352986111112,
+        "needs_update": false,
+        "last_update": "2025-08-19T11:48:30.749801"
+      }
+    },
+    "alerts": [
+      {
+        "type": "memory_high",
+        "severity": "warning",
+        "message": "Memory usage high: 80.1%",
+        "value": 80.1
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-08-19T12:51:40.167775",
+    "status": "healthy",
+    "checks": {
+      "system": {
+        "cpu_usage_percent": 12.1,
+        "memory_usage_percent": 80.0,
+        "memory_available_gb": 3.139476776123047,
+        "disk_free_gb": 318.3373031616211,
+        "disk_usage_percent": 33.1,
+        "process_memory_mb": 277.23828125
+      },
+      "index": {
+        "index_exists": true,
+        "metadata_exists": true,
+        "index_size_mb": 0.03519916534423828,
+        "metadata_size_mb": 0.20981597900390625,
+        "last_modified": "2025-08-19T11:48:30.749801",
+        "metadata_count": 24,
+        "backup_count": 15,
+        "latest_backup": "20250819_125032"
+      },
+      "performance": {
+        "uptime_hours": 1.14106716354688,
+        "total_requests": 0,
+        "error_count": 0,
+        "error_rate_percent": 0
+      },
+      "data": {
+        "index_age_hours": 1.0528952094444446,
+        "needs_update": false,
+        "last_update": "2025-08-19T11:48:30.749801"
+      }
+    },
+    "alerts": []
   }
 ]

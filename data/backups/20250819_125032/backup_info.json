@@ -1,0 +1,11 @@
+{
+  "id": "20250819_125032",
+  "timestamp": "2025-08-19T12:50:32.798610",
+  "description": "Pre-sync backup - 2025-08-19T07:20:25.187682",
+  "index_size": 36909,
+  "metadata_size": 220008,
+  "files": {
+    "index": "data\\backups\\20250819_125032\\faiss_index.bin",
+    "metadata": "data\\backups\\20250819_125032\\case_metadata.json"
+  }
+}
